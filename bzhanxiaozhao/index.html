@@ -1,0 +1,1530 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>b站校招-技术岗_内容岗_投递指南</title>
+  <meta name="description" content="b站校招提供2026届技术、产品、内容等岗位的招聘动态与投递指南。涵盖岗位类型介绍、笔试面试经验、内推流程问答，适合应届生了解校招节奏与选择方向。">
+  <meta name="keywords" content="哔哩哔哩校园招聘,应届生技术岗,内容运营校招,校招投递流程,笔试面试经验">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FB7299'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif'%3EB%3C/text%3E%3C/svg%3E">
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <style>
+    :root {
+      --brand: #FB7299;
+      --brand-dark: #E05A7A;
+      --brand-light: #FFECF1;
+      --ink: #1F2329;
+      --ink-soft: #4E5969;
+      --muted: #86909C;
+      --line: #E5E6EB;
+      --bg: #F7F8FA;
+      --panel: #FFFFFF;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --shadow: 0 2px 8px rgba(31, 35, 41, 0.06);
+      --sticky-offset: 104px;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; }
+    img, svg { display: block; max-width: 100%; }
+    ul, ol { list-style: none; }
+
+    /* 吸顶公告条 */
+    .announce-bar {
+      background: var(--brand);
+      color: #fff;
+      font-size: 13px;
+      padding: 8px 16px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .announce-bar strong { font-weight: 600; margin-right: 8px; }
+
+    /* 吸顶页头 */
+    .site-header {
+      position: sticky;
+      top: 37px;
+      z-index: 999;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+    }
+    .header-inner {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .brand-logo {
+      width: 38px;
+      height: 38px;
+      background: var(--brand);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 800;
+      font-size: 22px;
+      letter-spacing: -1px;
+    }
+    .brand-text {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: 0.5px;
+    }
+    .header-nav {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .header-nav a {
+      font-size: 14px;
+      color: var(--ink-soft);
+      padding: 5px 12px;
+      border-radius: 20px;
+      transition: background 0.2s;
+    }
+    .header-nav a:hover { background: var(--brand-light); color: var(--brand-dark); }
+    .header-actions {
+      margin-left: auto;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .btn-primary {
+      background: var(--brand);
+      color: #fff;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: var(--brand-dark); }
+    .search-box {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 4px 6px 4px 14px;
+      background: var(--bg);
+      transition: border 0.2s;
+    }
+    .search-box:focus-within { border-color: var(--brand); background: #fff; }
+    .search-box input {
+      border: none;
+      background: transparent;
+      outline: none;
+      font-size: 13px;
+      width: 140px;
+      color: var(--ink);
+    }
+    .search-box input::placeholder { color: var(--muted); }
+    .search-box button {
+      background: var(--brand);
+      border: none;
+      color: #fff;
+      border-radius: 16px;
+      padding: 5px 14px;
+      font-size: 13px;
+    }
+
+    /* 首屏 */
+    .hero {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 36px 24px 24px;
+      display: flex;
+      gap: 36px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .hero-content { flex: 1 1 480px; }
+    .hero-badge {
+      display: inline-block;
+      background: var(--brand-light);
+      color: var(--brand-dark);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-size: clamp(30px, 4vw, 42px);
+      font-weight: 800;
+      line-height: 1.25;
+      color: var(--ink);
+      margin-bottom: 14px;
+      letter-spacing: -0.5px;
+    }
+    .hero-desc {
+      font-size: 16px;
+      color: var(--ink-soft);
+      line-height: 1.8;
+      margin-bottom: 24px;
+      max-width: 560px;
+    }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-lg {
+      padding: 12px 28px;
+      border-radius: 26px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--line);
+      color: var(--ink-soft);
+      padding: 11px 26px;
+      border-radius: 26px;
+      font-size: 15px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-outline:hover { border-color: var(--brand); color: var(--brand); }
+    .hero-visual {
+      flex: 1 1 360px;
+      min-height: 220px;
+      background: linear-gradient(135deg, #FFF5F8 0%, #FDE4EC 100%);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 14px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-visual::after {
+      content: '';
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: rgba(251, 114, 153, 0.12);
+      top: -60px;
+      right: -40px;
+    }
+    .visual-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #fff;
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+      box-shadow: var(--shadow);
+      position: relative;
+      z-index: 1;
+    }
+    .visual-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background: var(--brand-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .visual-info { flex: 1; }
+    .visual-info strong { display: block; font-size: 14px; color: var(--ink); }
+    .visual-info span { font-size: 12px; color: var(--muted); }
+    .visual-tag {
+      font-size: 11px;
+      background: #E8F9F0;
+      color: #1D9E5F;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-weight: 500;
+    }
+
+    /* 三栏布局 */
+    .main-layout {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 0 24px 48px;
+      display: grid;
+      grid-template-columns: 178px minmax(0, 1fr) 244px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    /* 左栏 */
+    .sidebar-left {
+      position: sticky;
+      top: var(--sticky-offset);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .side-card {
+      background: var(--panel);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+    .side-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .channel-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .channel-list a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      color: var(--ink-soft);
+      transition: background 0.15s, color 0.15s;
+    }
+    .channel-list a:hover { background: var(--brand-light); color: var(--brand-dark); }
+    .channel-list a .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--line);
+      flex-shrink: 0;
+    }
+    .channel-list a:hover .dot { background: var(--brand); }
+
+    .filter-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .filter-tags button {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink-soft);
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 14px;
+      transition: all 0.15s;
+    }
+    .filter-tags button:hover,
+    .filter-tags button.active {
+      background: var(--brand);
+      color: #fff;
+      border-color: var(--brand);
+    }
+
+    /* 中栏 */
+    .content-main {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      min-width: 0;
+    }
+    .section-card {
+      background: var(--panel);
+      border-radius: var(--radius-md);
+      padding: 24px 26px;
+      box-shadow: var(--shadow);
+      scroll-margin-top: var(--sticky-offset);
+    }
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 18px;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .section-header h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-header h2::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 18px;
+      border-radius: 2px;
+      background: var(--brand);
+    }
+    .section-header .more-link {
+      font-size: 13px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .section-header .more-link:hover { color: var(--brand); }
+
+    .intro-text p { margin-bottom: 12px; color: var(--ink-soft); font-size: 15px; }
+    .intro-text p:last-child { margin-bottom: 0; }
+    .intro-text strong { color: var(--ink); font-weight: 600; }
+
+    /* 卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 14px;
+    }
+    .content-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .content-card:hover { border-color: var(--brand); box-shadow: 0 2px 12px rgba(251,114,153,0.12); }
+    .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+    .card-title { font-size: 15px; font-weight: 600; color: var(--ink); line-height: 1.4; }
+    .card-title:hover { color: var(--brand-dark); }
+    .card-type {
+      font-size: 11px;
+      background: var(--brand-light);
+      color: var(--brand-dark);
+      padding: 2px 8px;
+      border-radius: 10px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .card-desc { font-size: 13px; color: var(--muted); line-height: 1.6; flex: 1; }
+    .card-meta { display: flex; flex-wrap: wrap; gap: 6px; }
+    .card-meta span {
+      font-size: 11px;
+      color: var(--ink-soft);
+      background: var(--bg);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+    .card-footer .hot { color: var(--brand); font-weight: 500; }
+
+    /* 更新列表 */
+    .update-list { display: flex; flex-direction: column; gap: 0; }
+    .update-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px dashed var(--line);
+    }
+    .update-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .update-item:first-child { padding-top: 0; }
+    .update-num {
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      background: var(--brand-light);
+      color: var(--brand-dark);
+      font-size: 12px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .update-body { flex: 1; }
+    .update-body strong { font-size: 14px; color: var(--ink); font-weight: 600; }
+    .update-body p { font-size: 13px; color: var(--muted); margin-top: 2px; }
+    .update-time { font-size: 12px; color: var(--muted); white-space: nowrap; }
+
+    /* 分类入口 */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 10px;
+    }
+    .category-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding: 16px 10px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--line);
+      text-align: center;
+      transition: all 0.2s;
+      background: #fff;
+    }
+    .category-item:hover { border-color: var(--brand); background: var(--brand-light); }
+    .cat-icon { font-size: 22px; }
+    .cat-name { font-size: 13px; font-weight: 500; color: var(--ink); }
+    .cat-count { font-size: 11px; color: var(--muted); }
+
+    /* 深度解析 */
+    .deep-dive h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 22px 0 10px;
+    }
+    .deep-dive h3:first-of-type { margin-top: 0; }
+    .deep-dive p { font-size: 15px; color: var(--ink-soft); margin-bottom: 12px; }
+    .deep-dive ul { margin: 8px 0 16px 0; padding-left: 0; }
+    .deep-dive ul li {
+      position: relative;
+      padding-left: 18px;
+      font-size: 14px;
+      color: var(--ink-soft);
+      margin-bottom: 6px;
+    }
+    .deep-dive ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--brand);
+    }
+
+    /* 指南步骤 */
+    .guide-steps { display: flex; flex-direction: column; gap: 14px; }
+    .guide-step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .step-num {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--brand);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .step-body strong { display: block; font-size: 14px; color: var(--ink); margin-bottom: 2px; }
+    .step-body p { font-size: 13px; color: var(--muted); }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 8px; }
+    details {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      background: #fff;
+      overflow: hidden;
+    }
+    summary {
+      padding: 13px 16px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.15s;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: '+'; font-size: 18px; color: var(--muted); font-weight: 400; }
+    details[open] summary::after { content: '−'; }
+    summary:hover { background: var(--bg); }
+    details p { padding: 0 16px 14px; font-size: 14px; color: var(--ink-soft); line-height: 1.7; }
+
+    /* 评论 */
+    .comment-list { display: flex; flex-direction: column; gap: 14px; }
+    .comment-item { display: flex; gap: 12px; }
+    .comment-avatar {
+      width: 34px; height: 34px; border-radius: 50%;
+      background: linear-gradient(135deg, #FFD1DF, #FB7299);
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 14px; font-weight: 600; flex-shrink: 0;
+    }
+    .comment-body { flex: 1; }
+    .comment-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 3px; flex-wrap: wrap; }
+    .comment-name { font-size: 13px; font-weight: 600; color: var(--ink); }
+    .comment-date { font-size: 11px; color: var(--muted); }
+    .comment-text { font-size: 14px; color: var(--ink-soft); line-height: 1.6; }
+
+    /* 资讯 */
+    .news-list { display: flex; flex-direction: column; gap: 0; }
+    .news-item {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .news-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .news-item:first-child { padding-top: 0; }
+    .news-date {
+      font-size: 12px; color: var(--muted);
+      min-width: 72px; flex-shrink: 0;
+      padding-top: 2px;
+    }
+    .news-body strong { font-size: 14px; color: var(--ink); font-weight: 600; display: block; }
+    .news-body strong:hover { color: var(--brand-dark); }
+    .news-body p { font-size: 13px; color: var(--muted); margin-top: 3px; }
+
+    /* 相关推荐标签 */
+    .tag-index { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag-index a {
+      font-size: 13px;
+      padding: 6px 14px;
+      border-radius: 16px;
+      background: var(--bg);
+      color: var(--ink-soft);
+      border: 1px solid transparent;
+      transition: all 0.15s;
+    }
+    .tag-index a:hover { background: var(--brand-light); color: var(--brand-dark); border-color: var(--brand); }
+
+    /* 精选证言 */
+    .testimonial {
+      background: linear-gradient(135deg, #FFF5F8, #FFF9FA);
+      border-radius: var(--radius-md);
+      padding: 20px 24px;
+      border-left: 4px solid var(--brand);
+      margin-top: 4px;
+    }
+    .testimonial p { font-size: 15px; color: var(--ink-soft); font-style: italic; line-height: 1.8; }
+    .testimonial .author { margin-top: 12px; font-size: 13px; color: var(--muted); font-style: normal; }
+    .testimonial .author strong { color: var(--ink); }
+
+    /* 右栏 */
+    .sidebar-right {
+      position: sticky;
+      top: var(--sticky-offset);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .toc-nav { display: flex; flex-direction: column; gap: 2px; }
+    .toc-nav a {
+      font-size: 13px;
+      color: var(--ink-soft);
+      padding: 6px 10px;
+      border-radius: var(--radius-sm);
+      border-left: 2px solid transparent;
+      transition: all 0.15s;
+    }
+    .toc-nav a:hover { color: var(--brand-dark); background: var(--brand-light); border-left-color: var(--brand); }
+
+    .hot-list { display: flex; flex-direction: column; gap: 2px; }
+    .hot-list a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+      color: var(--ink-soft);
+      transition: background 0.15s;
+    }
+    .hot-list a:hover { background: var(--bg); color: var(--brand-dark); }
+    .hot-list .rank {
+      width: 18px; height: 18px; border-radius: 4px;
+      background: var(--line); color: var(--muted);
+      font-size: 11px; font-weight: 600;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .hot-list a:nth-child(1) .rank { background: var(--brand); color: #fff; }
+    .hot-list a:nth-child(2) .rank { background: #FFB6C9; color: #fff; }
+    .hot-list a:nth-child(3) .rank { background: #FFD9E4; color: var(--brand-dark); }
+
+    .related-tags .tag-index a { font-size: 12px; padding: 4px 10px; }
+
+    /* 页尾 */
+    .site-footer {
+      background: #1F2329;
+      color: #B4B9C2;
+      padding: 40px 24px 28px;
+      margin-top: 24px;
+    }
+    .footer-inner {
+      max-width: 1380px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 32px;
+    }
+    .footer-brand .brand { margin-bottom: 12px; }
+    .footer-brand .brand-logo { background: var(--brand); }
+    .footer-brand .brand-text { color: #fff; }
+    .footer-brand p { font-size: 13px; line-height: 1.7; color: #8A919F; }
+    .footer-col h4 { font-size: 14px; color: #fff; font-weight: 600; margin-bottom: 12px; }
+    .footer-col a { display: block; font-size: 13px; color: #8A919F; padding: 4px 0; transition: color 0.15s; }
+    .footer-col a:hover { color: var(--brand); }
+    .footer-bottom {
+      max-width: 1380px;
+      margin: 28px auto 0;
+      padding-top: 18px;
+      border-top: 1px solid #2E333A;
+      font-size: 12px;
+      color: #6B7280;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    /* 响应式 */
+    @media (max-width: 1024px) {
+      .main-layout { grid-template-columns: 160px minmax(0, 1fr); }
+      .sidebar-right { display: none; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .main-layout { grid-template-columns: 1fr; padding: 0 16px 32px; }
+      .sidebar-left {
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .sidebar-left .side-card { flex: 1 1 auto; min-width: 140px; }
+      .channel-list { flex-direction: row; flex-wrap: wrap; }
+      .channel-list a { padding: 5px 8px; font-size: 13px; }
+      .hero { padding: 24px 16px 16px; gap: 24px; }
+      .hero-visual { display: none; }
+      .header-inner { gap: 12px; padding: 10px 16px; }
+      .header-actions .search-box input { width: 100px; }
+      .card-grid { grid-template-columns: 1fr; }
+      .category-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-inner { grid-template-columns: 1fr; gap: 20px; }
+      .section-card { padding: 18px 16px; }
+      .announce-bar { font-size: 12px; padding: 6px 10px; }
+      .site-header { top: 33px; }
+    }
+    @media (max-width: 480px) {
+      .header-nav { display: none; }
+      .hero h1 { font-size: 26px; }
+      .hero-desc { font-size: 14px; }
+      .search-box { display: none; }
+      .footer-bottom { flex-direction: column; }
+    }
+
+    .no-results {
+      padding: 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="announce-bar">
+  <strong>📢 2026届校招</strong> 技术岗网申通道开放中 · 内容运营类岗位新增20个HC · 笔试安排请留意站内信
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/#" class="brand" aria-label="b站校招首页">
+      <span class="brand-logo" aria-hidden="true">B</span>
+      <span class="brand-text">b站校招</span>
+    </a>
+    <nav class="header-nav" aria-label="主题导航">
+      <a href="/#intro">校招简介</a>
+      <a href="/#hot-jobs">热门岗位</a>
+      <a href="/#updates">最新动态</a>
+      <a href="/#categories">岗位分类</a>
+      <a href="/#deep-dive">深度解析</a>
+      <a href="/#faq">常见问答</a>
+    </nav>
+    <div class="header-actions">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="搜索岗位或关键词" aria-label="搜索岗位">
+        <button type="button" id="searchBtn">搜索</button>
+      </div>
+      <button class="btn-primary" type="button">投递入口</button>
+    </div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-content">
+    <span class="hero-badge">2026 校园招聘 · 应届生专属</span>
+    <h1 id="hero-title">b站校招</h1>
+    <p class="hero-desc">
+      汇聚技术研发、产品策划、内容运营、设计创意等校招岗位方向。从网申投递到笔试面试，提供岗位类型解析、准备节奏与选择建议，帮助应届生找到适合自己的方向。
+    </p>
+    <div class="hero-actions">
+      <a href="/#hot-jobs" class="btn-primary btn-lg">查看热门岗位</a>
+      <a href="/#deep-dive" class="btn-outline btn-lg">了解校招流程</a>
+    </div>
+  </div>
+  <div class="hero-visual" aria-hidden="true">
+    <div class="visual-row">
+      <div class="visual-icon">💻</div>
+      <div class="visual-info">
+        <strong>技术研发类</strong>
+        <span>后端 / 前端 / 算法 / 客户端</span>
+      </div>
+      <span class="visual-tag">热招</span>
+    </div>
+    <div class="visual-row">
+      <div class="visual-icon">🎬</div>
+      <div class="visual-info">
+        <strong>内容运营类</strong>
+        <span>UP主运营 / 内容策划 / 社区</span>
+      </div>
+      <span class="visual-tag">新增</span>
+    </div>
+    <div class="visual-row">
+      <div class="visual-icon">📐</div>
+      <div class="visual-info">
+        <strong>产品设计类</strong>
+        <span>产品经理 / 交互 / 视觉设计</span>
+      </div>
+      <span class="visual-tag">开放</span>
+    </div>
+  </div>
+</section>
+
+<!-- 三栏主内容 -->
+<div class="main-layout">
+
+  <!-- 左栏 -->
+  <aside class="sidebar-left" aria-label="频道导航与筛选">
+    <div class="side-card">
+      <div class="side-title">频道导航</div>
+      <nav class="channel-list" aria-label="左栏频道">
+        <a href="/#intro"><span class="dot"></span>校招简介</a>
+        <a href="/#hot-jobs"><span class="dot"></span>热门岗位推荐</a>
+        <a href="/#updates"><span class="dot"></span>最新招聘动态</a>
+        <a href="/#categories"><span class="dot"></span>岗位分类入口</a>
+        <a href="/#deep-dive"><span class="dot"></span>校招深度解析</a>
+        <a href="/#guide"><span class="dot"></span>投递体验指南</a>
+        <a href="/#faq"><span class="dot"></span>常见问题</a>
+        <a href="/#comments"><span class="dot"></span>用户评论</a>
+        <a href="/#news"><span class="dot"></span>相关资讯</a>
+        <a href="/#recommend"><span class="dot"></span>相关推荐</a>
+      </nav>
+    </div>
+    <div class="side-card">
+      <div class="side-title">岗位方向筛选</div>
+      <div class="filter-tags" id="filterTags">
+        <button type="button" class="active" data-filter="all">全部</button>
+        <button type="button" data-filter="技术">技术</button>
+        <button type="button" data-filter="内容">内容</button>
+        <button type="button" data-filter="产品">产品</button>
+        <button type="button" data-filter="设计">设计</button>
+        <button type="button" data-filter="运营">运营</button>
+      </div>
+    </div>
+    <div class="side-card">
+      <div class="side-title">热门搜索词</div>
+      <div class="filter-tags" style="gap:8px;">
+        <a href="/#faq" style="font-size:12px;padding:4px 10px;border:1px solid var(--line);border-radius:14px;color:var(--ink-soft);">技术岗笔试考什么</a>
+        <a href="/#faq" style="font-size:12px;padding:4px 10px;border:1px solid var(--line);border-radius:14px;color:var(--ink-soft);">内容岗需要作品集吗</a>
+        <a href="/#faq" style="font-size:12px;padding:4px 10px;border:1px solid var(--line);border-radius:14px;color:var(--ink-soft);">校招和社招区别</a>
+        <a href="/#updates" style="font-size:12px;padding:4px 10px;border:1px solid var(--line);border-radius:14px;color:var(--ink-soft);">2026届时间线</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 中栏 -->
+  <main class="content-main">
+
+    <!-- 1. 内容简介 -->
+    <section id="intro" class="section-card" aria-labelledby="intro-title">
+      <div class="section-header">
+        <h2 id="intro-title">b站校招简介</h2>
+      </div>
+      <div class="intro-text">
+        <p><strong>b站校招</strong>是面向应届毕业生的校园招聘通道，覆盖技术、产品、内容、设计、运营等多个方向。每年校招分为提前批与正式批两个阶段，技术类岗位通常在春季启动提前批，内容与运营类岗位则集中在秋季开放。对于希望进入互联网行业的同学来说，了解各岗位类型的具体要求与时间节点，比盲目海投更有效。</p>
+        <p>从岗位类型来看，技术方向包括后端开发、前端开发、算法工程、客户端开发等；内容方向涵盖UP主运营、内容策划、社区运营、版权管理等；产品与设计方向则包括产品经理、交互设计师、视觉设计师等。不同岗位对专业背景的要求差异较大，技术岗通常有在线笔试环节，内容与运营岗更看重作品集与实习经历。</p>
+        <p>关于投递流程，大多数岗位需要经过网申、在线测评、笔试（部分岗位）、面试（2-3轮）以及最终的录用意向沟通。提前批的流程通常更快，部分技术岗位可以免笔试直接进入面试环节。建议应届生在投递前先明确自己的方向偏好，再结合岗位描述中的关键词准备简历，突出与岗位匹配的项目经历或作品。</p>
+        <p>如果你还在犹豫选择技术岗还是内容岗，可以先从自己过往的项目经验与日常兴趣入手：写过代码、做过项目部署的可以优先考虑技术方向；运营过自媒体账号、策划过校园活动的则更适合内容运营类岗位。两条路径的考察重点不同，提前了解有助于更有针对性地准备。</p>
+      </div>
+    </section>
+
+    <!-- 2. 热门岗位推荐 -->
+    <section id="hot-jobs" class="section-card" aria-labelledby="hot-title">
+      <div class="section-header">
+        <h2 id="hot-title">热门岗位推荐</h2>
+        <a href="/#categories" class="more-link">查看全部分类 →</a>
+      </div>
+      <div class="card-grid" id="jobCards">
+        <article class="content-card" data-category="技术">
+          <div class="card-top">
+            <span class="card-title">后端开发工程师（校招）</span>
+            <span class="card-type">技术</span>
+          </div>
+          <p class="card-desc">负责B站核心业务的服务端开发，要求熟悉Go/Java，有分布式系统项目经验优先。</p>
+          <div class="card-meta"><span>Go</span><span>分布式</span><span>2026届</span></div>
+          <div class="card-footer"><span class="hot">🔥 热度 986</span><span>更新于 06-12</span></div>
+        </article>
+        <article class="content-card" data-category="技术">
+          <div class="card-top">
+            <span class="card-title">算法工程师-推荐方向</span>
+            <span class="card-type">技术</span>
+          </div>
+          <p class="card-desc">参与推荐系统排序模型优化，要求机器学习基础扎实，有Kaggle或论文经验加分。</p>
+          <div class="card-meta"><span>推荐系统</span><span>机器学习</span><span>2026届</span></div>
+          <div class="card-footer"><span class="hot">🔥 热度 912</span><span>更新于 06-10</span></div>
+        </article>
+        <article class="content-card" data-category="内容">
+          <div class="card-top">
+            <span class="card-title">UP主运营（内容方向）</span>
+            <span class="card-type">内容</span>
+          </div>
+          <p class="card-desc">负责UP主成长策略与活动策划，需要熟悉B站社区生态，有自媒体运营经历优先。</p>
+          <div class="card-meta"><span>UP主运营</span><span>社区生态</span><span>2026届</span></div>
+          <div class="card-footer"><span class="hot">🔥 热度 874</span><span>更新于 06-11</span></div>
+        </article>
+        <article class="content-card" data-category="产品">
+          <div class="card-top">
+            <span class="card-title">产品经理-社区方向</span>
+            <span class="card-type">产品</span>
+          </div>
+          <p class="card-desc">参与社区功能规划与需求落地，要求逻辑清晰，有产品实习或校园项目经验。</p>
+          <div class="card-meta"><span>社区产品</span><span>需求分析</span><span>2026届</span></div>
+          <div class="card-footer"><span class="hot">🔥 热度 856</span><span>更新于 06-09</span></div>
+        </article>
+        <article class="content-card" data-category="设计">
+          <div class="card-top">
+            <span class="card-title">视觉设计师（校招）</span>
+            <span class="card-type">设计</span>
+          </div>
+          <p class="card-desc">负责运营活动视觉与品牌延展设计，要求作品集完整，掌握Figma与动效基础。</p>
+          <div class="card-meta"><span>视觉设计</span><span>作品集</span><span>2026届</span></div>
+          <div class="card-footer"><span class="hot">🔥 热度 798</span><span>更新于 06-08</span></div>
+        </article>
+        <article class="content-card" data-category="运营">
+          <div class="card-top">
+            <span class="card-title">内容运营-知识区</span>
+            <span class="card-type">运营</span>
+          </div>
+          <p class="card-desc">负责知识类内容的策划与专题运营，需要较强的文案能力与数据分析意识。</p>
+          <div class="card-meta"><span>内容策划</span><span>知识区</span><span>2026届</span></div>
+          <div class="card-footer"><span class="hot">🔥 热度 765</span><span>更新于 06-07</span></div>
+        </article>
+      </div>
+      <div class="no-results" id="noResults">没有找到匹配的岗位，试试其他筛选条件。</div>
+    </section>
+
+    <!-- 3. 最新更新 -->
+    <section id="updates" class="section-card" aria-labelledby="updates-title">
+      <div class="section-header">
+        <h2 id="updates-title">最新招聘动态</h2>
+        <a href="/#news" class="more-link">更多资讯 →</a>
+      </div>
+      <div class="update-list">
+        <div class="update-item">
+          <span class="update-num">1</span>
+          <div class="update-body">
+            <strong>2026届技术提前批网申将于6月20日截止</strong>
+            <p>后端、前端、算法等岗位提前批投递窗口临近关闭，建议尽早完成在线测评。</p>
+          </div>
+          <span class="update-time">06-12</span>
+        </div>
+        <div class="update-item">
+          <span class="update-num">2</span>
+          <div class="update-body">
+            <strong>内容运营类岗位新增20个HC，覆盖知识区与生活区</strong>
+            <p>UP主运营、内容策划方向扩招，对作品集与实习经历要求较高。</p>
+          </div>
+          <span class="update-time">06-11</span>
+        </div>
+        <div class="update-item">
+          <span class="update-num">3</span>
+          <div class="update-body">
+            <strong>笔试模拟系统开放，技术岗可提前熟悉题型</strong>
+            <p>在线编程与选择题混合卷，建议预留60分钟完整测试一次。</p>
+          </div>
+          <span class="update-time">06-10</span>
+        </div>
+        <div class="update-item">
+          <span class="update-num">4</span>
+          <div class="update-body">
+            <strong>产品与设计岗面试常见问题清单更新</strong>
+            <p>新增社区方向产品题与视觉设计快题案例，供面试准备参考。</p>
+          </div>
+          <span class="update-time">06-09</span>
+        </div>
+        <div class="update-item">
+          <span class="update-num">5</span>
+          <div class="update-body">
+            <strong>内推通道开放：技术岗内推可免简历初筛</strong>
+            <p>通过在职员工获取内推码后，简历将直接进入部门评估环节。</p>
+          </div>
+          <span class="update-time">06-08</span>
+        </div>
+        <div class="update-item">
+          <span class="update-num">6</span>
+          <div class="update-body">
+            <strong>2026届校招时间线公布：正式批预计8月启动</strong>
+            <p>技术岗正式批与内容岗同步开放，建议提前准备好简历与作品集。</p>
+          </div>
+          <span class="update-time">06-06</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 分类入口 -->
+    <section id="categories" class="section-card" aria-labelledby="cat-title">
+      <div class="section-header">
+        <h2 id="cat-title">岗位分类入口</h2>
+      </div>
+      <div class="category-grid">
+        <a href="/#hot-jobs" class="category-item">
+          <span class="cat-icon">⚙️</span>
+          <span class="cat-name">技术研发</span>
+          <span class="cat-count">32 个岗位</span>
+        </a>
+        <a href="/#hot-jobs" class="category-item">
+          <span class="cat-icon">📝</span>
+          <span class="cat-name">内容运营</span>
+          <span class="cat-count">24 个岗位</span>
+        </a>
+        <a href="/#hot-jobs" class="category-item">
+          <span class="cat-icon">📱</span>
+          <span class="cat-name">产品经理</span>
+          <span class="cat-count">12 个岗位</span>
+        </a>
+        <a href="/#hot-jobs" class="category-item">
+          <span class="cat-icon">🎨</span>
+          <span class="cat-name">设计创意</span>
+          <span class="cat-count">10 个岗位</span>
+        </a>
+        <a href="/#hot-jobs" class="category-item">
+          <span class="cat-icon">📊</span>
+          <span class="cat-name">数据分析</span>
+          <span class="cat-count">8 个岗位</span>
+        </a>
+        <a href="/#hot-jobs" class="category-item">
+          <span class="cat-icon">🎮</span>
+          <span class="cat-name">游戏运营</span>
+          <span class="cat-count">6 个岗位</span>
+        </a>
+        <a href="/#hot-jobs" class="category-item">
+          <span class="cat-icon">📢</span>
+          <span class="cat-name">市场品牌</span>
+          <span class="cat-count">5 个岗位</span>
+        </a>
+        <a href="/#hot-jobs" class="category-item">
+          <span class="cat-icon">📋</span>
+          <span class="cat-name">职能支持</span>
+          <span class="cat-count">7 个岗位</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 5. 深度解析 -->
+    <section id="deep-dive" class="section-card deep-dive" aria-labelledby="deep-title">
+      <div class="section-header">
+        <h2 id="deep-title">b站校招深度解析</h2>
+      </div>
+      <p>每年校招季，大量应届生面对众多岗位方向容易陷入选择困难。b站校招的岗位体系按职能划分为几个大类，每一类的考察重点与准备方式都有明显差异。理解这些差异，比盲目投递更有效率。</p>
+
+      <h3>技术岗与内容岗的考察差异</h3>
+      <p>技术类岗位的筛选以在线笔试为第一道门槛，题目涵盖数据结构、算法与计算机基础。通过笔试后进入技术面试，重点考察项目深度与编码能力。内容类岗位则更看重简历中的作品与经历，面试环节常要求分析具体的内容案例或运营场景。</p>
+      <ul>
+        <li>技术岗：算法题 + 项目追问 + 系统设计（部分岗位）</li>
+        <li>内容岗：作品集评估 + 案例分析 + 文案测试</li>
+        <li>产品岗：产品感考察 + 逻辑推演 + 数据意识</li>
+      </ul>
+
+      <h3>提前批与正式批如何选择</h3>
+      <p>提前批的流程更快，部分技术岗位可以免笔试直接进入面试，但岗位数量相对较少，竞争集中在核心方向。正式批开放的岗位更多，涵盖内容、运营、设计等方向，但流程周期更长。对于技术方向明确、项目经验扎实的同学，优先走提前批是合理选择；如果还在探索方向，正式批提供了更广的岗位池。</p>
+
+      <h3>简历与作品集的准备要点</h3>
+      <p>技术岗简历应突出项目中的技术选型与个人贡献，避免只罗列课程名称。内容岗则需要展示对B站社区的理解，例如分析某个分区的UP主生态、策划过的校园活动或自媒体运营数据。产品与设计岗的作品集应包含完整的思考过程，而不仅是最终效果图。</p>
+      <p>无论投递哪个方向，建议在简历中体现与岗位关键词的匹配度。例如投递内容运营时，可以突出“UP主运营”“社区生态”“内容策划”等相关经历；投递技术岗时，则强调“分布式系统”“推荐算法”“高并发”等具体技术点。</p>
+
+      <h3>面试中的常见考察维度</h3>
+      <p>技术面试通常围绕简历中的项目展开，面试官会追问技术细节与设计取舍。内容与产品面试则更关注分析框架与沟通表达，常见的考察形式包括案例讨论和即兴策划。设计岗需要准备作品集讲解，重点说明设计决策背后的用户需求。</p>
+      <p>整体来看，b站校招的面试风格偏向务实，更看重候选人是否真正理解自己做过的事情，而非背诵标准答案。提前梳理项目经历中的关键决策点，比临时刷题更有效。</p>
+    </section>
+
+    <!-- 6. 体验指南 -->
+    <section id="guide" class="section-card" aria-labelledby="guide-title">
+      <div class="section-header">
+        <h2 id="guide-title">投递体验指南</h2>
+      </div>
+      <div class="guide-steps">
+        <div class="guide-step">
+          <span class="step-num">1</span>
+          <div class="step-body">
+            <strong>确定投递方向</strong>
+            <p>根据专业背景与项目经历，从技术、内容、产品、设计中选择1-2个方向，避免同一批次海投多个不相关岗位。</p>
+          </div>
+        </div>
+        <div class="guide-step">
+          <span class="step-num">2</span>
+          <div class="step-body">
+            <strong>完善在线简历</strong>
+            <p>重点填写项目经历与技能标签，技术岗附上GitHub链接，内容岗附上作品集或运营账号。</p>
+          </div>
+        </div>
+        <div class="guide-step">
+          <span class="step-num">3</span>
+          <div class="step-body">
+            <strong>完成在线测评</strong>
+            <p>部分岗位在网申后自动触发测评，内容为逻辑推理与性格问卷，建议在安静环境下一次性完成。</p>
+          </div>
+        </div>
+        <div class="guide-step">
+          <span class="step-num">4</span>
+          <div class="step-body">
+            <strong>关注笔试与面试通知</strong>
+            <p>笔试通知通常通过邮件与短信发送，面试安排会提前1-3天确认。建议保持通讯畅通并定期检查邮箱。</p>
+          </div>
+        </div>
+        <div class="guide-step">
+          <span class="step-num">5</span>
+          <div class="step-body">
+            <strong>跟进投递状态</strong>
+            <p>在招聘官网个人中心可查看各环节进度。若长时间未更新，可通过内推渠道或官方答疑入口咨询。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FAQ -->
+    <section id="faq" class="section-card" aria-labelledby="faq-title">
+      <div class="section-header">
+        <h2 id="faq-title">常见问题</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>技术岗笔试主要考什么内容？</summary>
+          <p>技术岗笔试通常包含选择题与编程题两部分。选择题覆盖数据结构、操作系统、计算机网络基础；编程题以中等难度算法题为主，常见题型包括数组操作、字符串处理与动态规划。建议提前在在线编程平台练习近两年真题。</p>
+        </details>
+        <details>
+          <summary>内容运营岗需要准备作品集吗？</summary>
+          <p>建议准备。内容运营类岗位的简历筛选阶段非常看重作品集或运营经历。作品集可以包含自媒体账号数据、校园活动策划方案、内容分析报告等。即使没有正式运营经验，也可以整理课程项目或社团公众号的经历。</p>
+        </details>
+        <details>
+          <summary>校招和社招在面试流程上有什么区别？</summary>
+          <p>校招更侧重基础能力与成长潜力，技术岗面试以算法与项目为主，内容岗关注分析框架与表达。社招则更看重过往工作的直接产出与行业经验。校招的面试轮次通常为2-3轮，社招可能更多。</p>
+        </details>
+        <details>
+          <summary>2026届校招的时间线是怎样的？</summary>
+          <p>技术提前批通常在春季启动，网申截止到6月中下旬；正式批一般在8月开放，持续到10月。内容与运营类岗位集中在秋季正式批开放。建议关注官方招聘页面的公告，不同岗位的截止时间可能不同。</p>
+        </details>
+        <details>
+          <summary>非计算机专业可以投技术岗吗？</summary>
+          <p>可以，但需要证明技术能力。如果专业不对口，建议在简历中突出项目经历、开源贡献或竞赛成绩。部分技术岗位对专业限制较宽松，更看重实际编码能力与项目经验。</p>
+        </details>
+        <details>
+          <summary>投递后多久能收到笔试或面试通知？</summary>
+          <p>网申截止后通常1-2周内发出笔试通知，面试通知在笔试结束后1周左右。提前批的响应速度更快，部分岗位在投递后3-5天就有反馈。建议投递后定期查看邮箱与招聘官网状态。</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- 8. 用户评论 -->
+    <section id="comments" class="section-card" aria-labelledby="comments-title">
+      <div class="section-header">
+        <h2 id="comments-title">用户评论</h2>
+      </div>
+      <div class="comment-list">
+        <div class="comment-item">
+          <div class="comment-avatar">陈</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="comment-name">陈同学</span><span class="comment-date">06-12</span></div>
+            <p class="comment-text">技术提前批的笔试比想象中难，算法题第二道卡了很久，建议提前多刷动态规划。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar">李</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="comment-name">李小鱼</span><span class="comment-date">06-11</span></div>
+            <p class="comment-text">内容岗面试问得很细，让我分析一个知识区UP主的成长路径，还好之前准备过。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar">王</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="comment-name">王浩然</span><span class="comment-date">06-11</span></div>
+            <p class="comment-text">内推确实有用，简历直接进部门评估了，比普通通道快很多。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar">张</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="comment-name">张一诺</span><span class="comment-date">06-10</span></div>
+            <p class="comment-text">产品岗的群面题目是关于社区氛围治理的，讨论时间比较紧，需要快速理清思路。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar">赵</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="comment-name">赵小满</span><span class="comment-date">06-10</span></div>
+            <p class="comment-text">设计岗作品集讲解环节很重要，面试官会追问设计决策，不能只放图。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar">周</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="comment-name">周子涵</span><span class="comment-date">06-09</span></div>
+            <p class="comment-text">测评题目挺多的，做之前最好休息好，不然到后面容易注意力下降。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar">吴</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="comment-name">吴雨桐</span><span class="comment-date">06-09</span></div>
+            <p class="comment-text">正式批的岗位确实比提前批多，内容运营有好几个细分方向，可以慢慢选。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar">郑</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="comment-name">郑凯文</span><span class="comment-date">06-08</span></div>
+            <p class="comment-text">技术面试官问项目问得很深，会把一个点一直往下挖，需要对自己的项目非常熟悉。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar">孙</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="comment-name">孙悦然</span><span class="comment-date">06-08</span></div>
+            <p class="comment-text">感觉内容岗的作品集比简历还重要，建议把运营数据截图放上去，很加分。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar">刘</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="comment-name">刘一辰</span><span class="comment-date">06-07</span></div>
+            <p class="comment-text">笔试系统可以用本地IDE调试吗？我用的在线编辑器不太习惯，建议提前看说明。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar">黄</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="comment-name">黄思琪</span><span class="comment-date">06-07</span></div>
+            <p class="comment-text">校招流程整体比较清晰，每一步都有邮件提醒，不会错过时间节点。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar">何</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="comment-name">何宇轩</span><span class="comment-date">06-06</span></div>
+            <p class="comment-text">非科班投技术岗，笔试过了但面试项目深度不够，还是需要多做点实际项目。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. 相关资讯 -->
+    <section id="news" class="section-card" aria-labelledby="news-title">
+      <div class="section-header">
+        <h2 id="news-title">相关资讯</h2>
+      </div>
+      <div class="news-list">
+        <div class="news-item">
+          <span class="news-date">06-12</span>
+          <div class="news-body">
+            <strong>2026届技术岗提前批笔试通过率约三成，算法题区分度最高</strong>
+            <p>据参与笔试的同学反馈，本次编程题第二道难度偏高，建议后续批次同学重点准备动态规划与图论。</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <span class="news-date">06-11</span>
+          <div class="news-body">
+            <strong>内容运营类岗位扩招，知识区与生活区成为重点方向</strong>
+            <p>新增岗位主要集中在UP主运营与内容策划方向，对社区理解与文案能力要求较高。</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <span class="news-date">06-10</span>
+          <div class="news-body">
+            <strong>产品岗面试新增案例分析环节，考察用户需求理解</strong>
+            <p>面试流程调整为简历面加案例分析，案例多来自社区功能迭代场景。</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <span class="news-date">06-09</span>
+          <div class="news-body">
+            <strong>设计岗作品集提交规范更新，建议控制在20页以内</strong>
+            <p>官方建议作品集突出设计过程与用户价值，避免过多视觉效果展示。</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <span class="news-date">06-08</span>
+          <div class="news-body">
+            <strong>内推通道使用率上升，技术岗内推免初筛政策延续至正式批</strong>
+            <p>通过在职员工获取内推码后，简历可直接进入部门评估，缩短流程周期。</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <span class="news-date">06-06</span>
+          <div class="news-body">
+            <strong>正式批岗位列表预计8月发布，涵盖内容、运营、设计等方向</strong>
+            <p>与提前批相比，正式批开放的岗位类型更丰富，适合方向尚不明确的同学。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. 相关推荐 -->
+    <section id="recommend" class="section-card" aria-labelledby="recommend-title">
+      <div class="section-header">
+        <h2 id="recommend-title">相关推荐</h2>
+      </div>
+      <div class="tag-index">
+        <a href="/#hot-jobs">后端开发校招岗位</a>
+        <a href="/#hot-jobs">算法工程师-推荐方向</a>
+        <a href="/#hot-jobs">UP主运营求职</a>
+        <a href="/#hot-jobs">社区产品经理校招</a>
+        <a href="/#faq">技术岗笔试刷题指南</a>
+        <a href="/#faq">内容岗作品集准备</a>
+        <a href="/#deep-dive">提前批与正式批对比</a>
+        <a href="/#guide">校招投递流程步骤</a>
+      </div>
+    </section>
+
+    <!-- 11. 精选证言 -->
+    <section id="testimonial" class="section-card" aria-labelledby="testimonial-title">
+      <div class="section-header">
+        <h2 id="testimonial-title">精选内容：学长学姐说</h2>
+      </div>
+      <div class="testimonial">
+        <p>“当时投的是内容运营岗，面试官让我分析一个知识区UP主的商业化路径，我提前准备了三个不同分区的案例，聊得比较深入。建议准备内容岗的同学多刷B站各分区的头部内容，理解社区生态。”</p>
+        <div class="author">—— <strong>林同学</strong> · 2025届内容运营岗入职</div>
+      </div>
+      <div class="testimonial" style="margin-top:14px;">
+        <p>“技术岗的面试很看重项目里的设计取舍，面试官会问‘为什么用这个方案而不是另一个’。把项目中的决策逻辑理清楚，比刷更多题有用。”</p>
+        <div class="author">—— <strong>许同学</strong> · 2025届后端开发岗入职</div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右栏 -->
+  <aside class="sidebar-right" aria-label="辅助阅读">
+    <div class="side-card">
+      <div class="side-title">页内目录</div>
+      <nav class="toc-nav" aria-label="页内目录">
+        <a href="/#intro">校招简介</a>
+        <a href="/#hot-jobs">热门岗位推荐</a>
+        <a href="/#updates">最新招聘动态</a>
+        <a href="/#categories">岗位分类入口</a>
+        <a href="/#deep-dive">校招深度解析</a>
+        <a href="/#guide">投递体验指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">用户评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#recommend">相关推荐</a>
+      </nav>
+    </div>
+    <div class="side-card">
+      <div class="side-title">热门条目</div>
+      <div class="hot-list">
+        <a href="/#hot-jobs"><span class="rank">1</span>后端开发工程师</a>
+        <a href="/#hot-jobs"><span class="rank">2</span>算法工程师-推荐</a>
+        <a href="/#hot-jobs"><span class="rank">3</span>UP主运营</a>
+        <a href="/#hot-jobs"><span class="rank">4</span>产品经理-社区</a>
+        <a href="/#hot-jobs"><span class="rank">5</span>视觉设计师</a>
+      </div>
+    </div>
+    <div class="side-card related-tags">
+      <div class="side-title">延伸阅读</div>
+      <div class="tag-index">
+        <a href="/#deep-dive">技术岗 vs 内容岗</a>
+        <a href="/#faq">笔试准备方法</a>
+        <a href="/#guide">网申注意事项</a>
+        <a href="/#news">2026届时间线</a>
+        <a href="/#comments">面试经验分享</a>
+      </div>
+    </div>
+  </aside>
+
+</div>
+
+<!-- 页尾 -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="brand">
+        <span class="brand-logo" aria-hidden="true">B</span>
+        <span class="brand-text">b站校招</span>
+      </div>
+      <p>面向应届生的校园招聘信息门户，提供岗位类型解析、投递流程说明与准备建议。内容涵盖技术、内容、产品、设计等方向。</p>
+    </div>
+    <div class="footer-col">
+      <h4>岗位方向</h4>
+      <a href="/#hot-jobs">技术研发</a>
+      <a href="/#hot-jobs">内容运营</a>
+      <a href="/#hot-jobs">产品经理</a>
+      <a href="/#hot-jobs">设计创意</a>
+    </div>
+    <div class="footer-col">
+      <h4>校招资源</h4>
+      <a href="/#deep-dive">深度解析</a>
+      <a href="/#guide">投递指南</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#news">相关资讯</a>
+    </div>
+    <div class="footer-col">
+      <h4>快速入口</h4>
+      <a href="/#updates">最新动态</a>
+      <a href="/#categories">岗位分类</a>
+      <a href="/#comments">用户评论</a>
+      <a href="/#recommend">相关推荐</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 b站校招 · 校园招聘信息展示页面</span>
+    <span>部分内容为示例数据，仅用于展示页面结构</span>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    // 筛选功能
+    var filterTags = document.getElementById('filterTags');
+    var jobCards = document.querySelectorAll('#jobCards .content-card');
+    var noResults = document.getElementById('noResults');
+
+    if (filterTags) {
+      filterTags.addEventListener('click', function(e) {
+        var btn = e.target.closest('button');
+        if (!btn) return;
+        var filter = btn.getAttribute('data-filter');
+
+        // 更新按钮状态
+        filterTags.querySelectorAll('button').forEach(function(b) {
+          b.classList.remove('active');
+        });
+        btn.classList.add('active');
+
+        // 筛选卡片
+        var visibleCount = 0;
+        jobCards.forEach(function(card) {
+          var cat = card.getAttribute('data-category') || '';
+          var show = (filter === 'all' || cat === filter);
+          card.style.display = show ? 'flex' : 'none';
+          if (show) visibleCount++;
+        });
+
+        // 无结果提示
+        if (noResults) {
+          noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+        }
+      });
+    }
+
+    // 搜索功能（本地筛选卡片标题与描述）
+    var searchInput = document.getElementById('searchInput');
+    var searchBtn = document.getElementById('searchBtn');
+
+    function doSearch() {
+      var keyword = (searchInput.value || '').trim().toLowerCase();
+      if (!keyword) {
+        // 清空搜索时恢复全部
+        jobCards.forEach(function(card) { card.style.display = 'flex'; });
+        if (noResults) noResults.style.display = 'none';
+        // 重置筛选按钮
+        if (filterTags) {
+          filterTags.querySelectorAll('button').forEach(function(b) { b.classList.remove('active'); });
+          var allBtn = filterTags.querySelector('button[data-filter="all"]');
+          if (allBtn) allBtn.classList.add('active');
+        }
+        return;
+      }
+
+      var visibleCount = 0;
+      jobCards.forEach(function(card) {
+        var text = card.textContent.toLowerCase();
+        var show = text.indexOf(keyword) !== -1;
+        card.style.display = show ? 'flex' : 'none';
+        if (show) visibleCount++;
+      });
+
+      // 同步筛选按钮为非激活状态
+      if (filterTags) {
+        filterTags.querySelectorAll('button').forEach(function(b) { b.classList.remove('active'); });
+      }
+
+      if (noResults) {
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+    }
+
+    if (searchBtn) {
+      searchBtn.addEventListener('click', doSearch);
+    }
+    if (searchInput) {
+      searchInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          doSearch();
+        }
+      });
+    }
+
+    // 平滑滚动偏移修正（锚点）
+    document.querySelectorAll('a[href^="/#"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        var targetId = this.getAttribute('href').replace('/#', '');
+        var target = document.getElementById(targetId);
+        if (target) {
+          e.preventDefault();
+          var offset = 104; // 公告条+页头高度
+          var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+          history.pushState(null, '', '/#' + targetId);
+        }
+      });
+    });
+  })();
+</script>
+
+</body>
+  </html>
