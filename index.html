@@ -1,0 +1,1128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>51每日大赛-每日赛事速递_参赛指南_赛事对比</title>
+<meta name="description" content="51每日大赛聚合每日赛事速递、参赛指南与赛事对比，提供实时赛程、热门项目推荐、常见问题解答，适合关注每日赛事动态与备赛的爱好者浏览。">
+<meta name="keywords" content="每日赛事速递,参赛指南,赛事对比,赛程安排,竞技项目">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1b2a'/%3E%3Cpath d='M16 44l8-20 8 12 8-18 8 26' stroke='%23f5c542' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --ink:#141b22;
+  --ink-soft:#3d4a56;
+  --muted:#6b7a88;
+  --paper:#f6f4ef;
+  --panel:#ffffff;
+  --line:#e0dcd3;
+  --line-strong:#cfc9bd;
+  --brand:#0d1b2a;
+  --brand-2:#12324a;
+  --accent:#c8961e;
+  --accent-soft:#f5c542;
+  --accent-bg:#fdf6e3;
+  --ok:#2e7d5b;
+  --radius:10px;
+  --radius-sm:7px;
+  --shadow:0 1px 2px rgba(20,27,34,.05),0 6px 20px rgba(20,27,34,.06);
+  --shadow-sm:0 1px 3px rgba(20,27,34,.08);
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  --w:1320px;
+  --ann-h:36px;
+  --head-h:62px;
+  --sticky-offset:calc(var(--ann-h) + var(--head-h) + 12px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-offset)}
+body{
+  font-family:var(--font);
+  background:var(--paper);
+  color:var(--ink);
+  font-size:15px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{
+  outline:2px solid var(--accent);outline-offset:2px;border-radius:3px;
+}
+img,svg{display:block;max-width:100%}
+ul{list-style:none}
+
+/* 吸顶公告条 */
+.announce{
+  position:sticky;top:0;z-index:60;
+  background:var(--brand);
+  color:#f3efe6;
+  font-size:13px;
+  height:var(--ann-h);
+  display:flex;align-items:center;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.announce .wrap{
+  width:min(var(--w),100% - 32px);margin:0 auto;
+  display:flex;align-items:center;gap:10px;
+  overflow:hidden;white-space:nowrap;
+}
+.announce .dot{
+  flex:0 0 auto;width:7px;height:7px;border-radius:50%;
+  background:var(--accent-soft);
+  box-shadow:0 0 0 3px rgba(245,197,66,.18);
+}
+.announce b{color:var(--accent-soft);font-weight:600}
+.announce .sep{color:rgba(255,255,255,.3)}
+
+/* 吸顶页头 */
+.head{
+  position:sticky;top:var(--ann-h);z-index:55;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+  height:var(--head-h);
+}
+.head .wrap{
+  width:min(var(--w),100% - 32px);margin:0 auto;
+  height:100%;display:flex;align-items:center;gap:22px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.brand-mark{
+  width:36px;height:36px;border-radius:9px;
+  background:var(--brand);
+  display:grid;place-items:center;
+  box-shadow:var(--shadow-sm);
+}
+.brand-mark svg{width:24px;height:24px}
+.brand-text{
+  font-size:19px;font-weight:800;letter-spacing:.4px;color:var(--brand);
+  white-space:nowrap;
+}
+.head-nav{display:flex;align-items:center;gap:2px;margin-left:6px;flex:1 1 auto;overflow:hidden}
+.head-nav a{
+  font-size:14px;color:var(--ink-soft);
+  padding:6px 11px;border-radius:6px;white-space:nowrap;
+  transition:background .15s,color .15s;
+}
+.head-nav a:hover{background:#f0ede6;color:var(--brand)}
+.head-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.search-box{position:relative;display:flex;align-items:center}
+.search-box input{
+  width:190px;height:34px;border:1px solid var(--line-strong);
+  border-radius:18px;padding:0 34px 0 14px;
+  font-size:13px;font-family:var(--font);color:var(--ink);
+  background:#fff;transition:border-color .15s,box-shadow .15s;
+}
+.search-box input:focus{
+  border-color:var(--accent);
+  box-shadow:0 0 0 3px rgba(200,150,30,.14);
+  outline:none;
+}
+.search-box .icon{
+  position:absolute;right:11px;top:50%;transform:translateY(-50%);
+  width:16px;height:16px;pointer-events:none;color:var(--muted);
+}
+.search-feedback{
+  position:absolute;top:42px;left:0;right:0;
+  background:#fff;border:1px solid var(--line);border-radius:8px;
+  box-shadow:var(--shadow);padding:9px 12px;font-size:12.5px;color:var(--muted);
+  display:none;z-index:80;
+}
+.search-feedback.show{display:block}
+.head-cta{
+  font-size:13px;font-weight:600;color:#fff;background:var(--brand-2);
+  padding:7px 14px;border-radius:18px;white-space:nowrap;
+  transition:background .15s;
+}
+.head-cta:hover{background:var(--brand)}
+
+/* 首屏 */
+.hero{
+  background:
+    radial-gradient(900px 340px at 82% -10%,rgba(245,197,66,.16),transparent 62%),
+    linear-gradient(155deg,#0d1b2a 0%,#122a3d 58%,#0f2233 100%);
+  color:#f4f1e9;
+  padding:34px 0 30px;
+  position:relative;overflow:hidden;
+}
+.hero .wrap{
+  width:min(var(--w),100% - 32px);margin:0 auto;
+  display:grid;grid-template-columns:1.25fr .85fr;gap:34px;align-items:center;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:12px;letter-spacing:.6px;color:var(--accent-soft);
+  border:1px solid rgba(245,197,66,.4);border-radius:20px;
+  padding:4px 12px;margin-bottom:14px;
+}
+.hero h1{
+  font-size:42px;line-height:1.15;letter-spacing:.5px;font-weight:900;
+  margin-bottom:14px;color:#fff;
+}
+.hero-lead{
+  font-size:15px;line-height:1.85;color:#cbd5df;max-width:560px;
+  margin-bottom:20px;
+}
+.hero-lead strong{color:var(--accent-soft);font-weight:600}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.btn{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:14px;font-weight:600;padding:9px 18px;border-radius:8px;
+  border:1px solid transparent;cursor:pointer;
+  transition:background .15s,border-color .15s,color .15s;
+}
+.btn-primary{background:var(--accent-soft);color:#231a05}
+.btn-primary:hover{background:#ffd75e}
+.btn-ghost{border-color:rgba(255,255,255,.28);color:#e8e4da}
+.btn-ghost:hover{border-color:var(--accent-soft);color:var(--accent-soft)}
+.hero-meta{
+  display:flex;flex-wrap:wrap;gap:18px;font-size:12.5px;color:#9fb0bf;
+}
+.hero-meta span b{color:#f0ece1;font-weight:700;margin-right:3px}
+.hero-visual{position:relative;min-height:230px}
+.hero-visual svg{width:100%;height:auto;filter:drop-shadow(0 8px 26px rgba(0,0,0,.35))}
+
+/* 主体三栏 */
+.layout{
+  width:min(var(--w),100% - 32px);margin:0 auto;
+  display:grid;
+  grid-template-columns:180px minmax(0,1fr) 250px;
+  gap:24px;
+  padding:26px 0 10px;
+  align-items:start;
+}
+.col-left,.col-right{position:sticky;top:var(--sticky-offset)}
+.side-panel{
+  background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--radius);padding:14px 12px;
+  box-shadow:var(--shadow-sm);margin-bottom:16px;
+}
+.side-title{
+  font-size:12px;font-weight:700;letter-spacing:1px;color:var(--muted);
+  text-transform:uppercase;padding:0 4px 8px;margin-bottom:6px;
+  border-bottom:1px dashed var(--line);
+}
+.side-nav a{
+  display:flex;align-items:center;justify-content:space-between;
+  font-size:13.5px;color:var(--ink-soft);
+  padding:7px 6px;border-radius:6px;
+  transition:background .14s,color .14s;
+}
+.side-nav a:hover{background:var(--accent-bg);color:var(--brand)}
+.side-nav a .n{font-size:11px;color:var(--muted)}
+.side-nav a.active{background:var(--accent-bg);color:var(--brand);font-weight:600}
+
+.tag-cloud{display:flex;flex-wrap:wrap;gap:6px;padding:4px 2px}
+.tag-cloud a,.tag-cloud span{
+  font-size:12px;padding:3px 9px;border-radius:14px;
+  background:#f1eee7;color:var(--ink-soft);border:1px solid transparent;
+  transition:background .14s,color .14s,border-color .14s;
+}
+.tag-cloud a:hover{background:var(--accent-bg);border-color:var(--accent);color:var(--brand)}
+
+.toc a{
+  display:block;font-size:13px;color:var(--ink-soft);
+  padding:5px 6px;border-left:2px solid transparent;
+  transition:color .14s,border-color .14s,background .14s;
+}
+.toc a:hover{color:var(--brand);border-left-color:var(--accent);background:#fbf8f0}
+
+.hot-list li{padding:8px 4px;border-bottom:1px dashed var(--line)}
+.hot-list li:last-child{border-bottom:0}
+.hot-list a{font-size:13px;line-height:1.5;color:var(--ink-soft);display:block}
+.hot-list a:hover{color:var(--brand)}
+.hot-list .meta{font-size:11px;color:var(--muted);margin-top:2px}
+
+/* 中栏板块 */
+.section{
+  background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--radius);padding:22px 24px;
+  box-shadow:var(--shadow-sm);margin-bottom:20px;
+}
+.section h2{
+  font-size:21px;font-weight:800;letter-spacing:.3px;color:var(--brand);
+  margin-bottom:4px;display:flex;align-items:baseline;gap:10px;
+}
+.section h2 .idx{
+  font-size:12px;font-weight:700;color:var(--accent);
+  letter-spacing:1px;border:1px solid var(--accent);
+  border-radius:4px;padding:1px 6px;transform:translateY(-2px);
+}
+.section .sub{
+  font-size:13px;color:var(--muted);margin-bottom:16px;
+}
+.section h3{
+  font-size:16.5px;font-weight:700;color:var(--brand-2);
+  margin:18px 0 8px;
+}
+.section p{margin-bottom:10px;color:var(--ink-soft);font-size:14.5px}
+.section p:last-child{margin-bottom:0}
+.section ul.bullets{padding-left:2px;margin:6px 0 12px}
+.section ul.bullets li{
+  position:relative;padding-left:18px;margin-bottom:6px;
+  font-size:14px;color:var(--ink-soft);
+}
+.section ul.bullets li::before{
+  content:"";position:absolute;left:2px;top:9px;
+  width:6px;height:6px;border-radius:50%;
+  background:var(--accent);
+}
+
+/* 卡片网格 */
+.card-grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;
+}
+.card{
+  border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:13px 14px;background:#fff;
+  transition:border-color .15s,box-shadow .15s,transform .15s;
+  display:flex;flex-direction:column;gap:6px;
+}
+.card:hover{border-color:var(--line-strong);box-shadow:var(--shadow-sm);transform:translateY(-1px)}
+.card h4{
+  font-size:14.5px;font-weight:700;color:var(--brand);line-height:1.45;
+}
+.card .tags{display:flex;flex-wrap:wrap;gap:5px}
+.card .tags span{
+  font-size:11px;padding:1.5px 7px;border-radius:10px;
+  background:#f2efe8;color:var(--ink-soft);
+}
+.card .tags span.type{background:var(--accent-bg);color:#7a5a08;font-weight:600}
+.card .blurb{font-size:12.5px;color:var(--muted);line-height:1.6;flex:1}
+.card .meta{
+  display:flex;align-items:center;gap:12px;
+  font-size:11.5px;color:var(--muted);border-top:1px dashed var(--line);
+  padding-top:7px;margin-top:2px;
+}
+.card .meta b{color:var(--accent);font-weight:700}
+
+/* 紧凑列表 */
+.compact-list li{
+  display:flex;align-items:baseline;gap:10px;
+  padding:8px 0;border-bottom:1px dashed var(--line);
+  font-size:14px;
+}
+.compact-list li:last-child{border-bottom:0}
+.compact-list .date{
+  flex:0 0 62px;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;
+}
+.compact-list .name{font-weight:600;color:var(--brand)}
+.compact-list .desc{color:var(--muted);font-size:13px}
+
+/* 分类入口 */
+.cat-grid{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;
+}
+.cat{
+  border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:11px 12px;background:#fbfaf6;
+  transition:background .15s,border-color .15s;
+}
+.cat:hover{background:var(--accent-bg);border-color:var(--accent)}
+.cat b{display:block;font-size:14px;color:var(--brand);margin-bottom:2px}
+.cat span{font-size:11.5px;color:var(--muted)}
+
+/* 对照面板 */
+.compare{
+  display:grid;grid-template-columns:1fr 1fr;gap:12px;
+}
+.compare .panel{
+  border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:14px;background:#fbfaf6;
+}
+.compare .panel h4{
+  font-size:14.5px;color:var(--brand);margin-bottom:8px;
+  display:flex;align-items:center;gap:6px;
+}
+.compare .panel h4 .pill{
+  font-size:10.5px;font-weight:600;padding:1px 8px;border-radius:10px;
+  background:var(--brand);color:#fff;
+}
+.compare .panel h4 .pill.alt{background:var(--accent);color:#231a05}
+.compare ul li{
+  font-size:13px;color:var(--ink-soft);padding:4px 0;
+  display:flex;gap:7px;
+}
+.compare ul li::before{content:"·";color:var(--accent);font-weight:900}
+
+/* 步骤 */
+.steps{counter-reset:step;display:flex;flex-direction:column;gap:10px}
+.step{
+  display:flex;gap:12px;align-items:flex-start;
+  border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:12px 14px;background:#fff;
+}
+.step .num{
+  flex:0 0 26px;height:26px;border-radius:50%;
+  background:var(--brand);color:var(--accent-soft);
+  display:grid;place-items:center;font-size:12.5px;font-weight:800;
+}
+.step b{display:block;font-size:14px;color:var(--brand);margin-bottom:2px}
+.step span{font-size:12.5px;color:var(--muted);line-height:1.6}
+
+/* FAQ */
+.faq details{
+  border:1px solid var(--line);border-radius:var(--radius-sm);
+  margin-bottom:8px;background:#fff;overflow:hidden;
+}
+.faq details[open]{border-color:var(--line-strong);box-shadow:var(--shadow-sm)}
+.faq summary{
+  cursor:pointer;list-style:none;padding:12px 15px;
+  font-size:14px;font-weight:600;color:var(--brand);
+  display:flex;align-items:center;gap:9px;
+  transition:background .14s;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover{background:#fbf8f0}
+.faq summary::before{
+  content:"+";flex:0 0 auto;width:18px;height:18px;border-radius:4px;
+  background:var(--accent-bg);color:#7a5a08;
+  display:grid;place-items:center;font-size:13px;font-weight:800;
+  transition:transform .18s;
+}
+.faq details[open] summary::before{content:"−";transform:rotate(180deg)}
+.faq .answer{padding:0 15px 13px 42px;font-size:13.5px;color:var(--ink-soft);line-height:1.7}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.comment{
+  border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:11px 13px;background:#fdfcf9;
+}
+.comment .who{
+  display:flex;align-items:center;gap:7px;margin-bottom:4px;
+}
+.comment .avatar{
+  width:22px;height:22px;border-radius:50%;
+  background:linear-gradient(135deg,var(--brand-2),var(--accent));
+  color:#fff;font-size:11px;font-weight:700;
+  display:grid;place-items:center;flex:0 0 auto;
+}
+.comment .name{font-size:12.5px;font-weight:600;color:var(--ink)}
+.comment .time{font-size:11px;color:var(--muted);margin-left:auto}
+.comment p{font-size:12.5px;color:var(--ink-soft);line-height:1.65;margin:0}
+
+/* 资讯 */
+.news li{
+  padding:11px 0;border-bottom:1px dashed var(--line);
+}
+.news li:last-child{border-bottom:0}
+.news .headline{
+  display:flex;align-items:baseline;gap:9px;margin-bottom:3px;
+}
+.news .headline a{font-size:14px;font-weight:600;color:var(--brand)}
+.news .headline a:hover{color:var(--brand-2);text-decoration:underline}
+.news .headline time{font-size:11.5px;color:var(--muted);flex:0 0 auto}
+.news .excerpt{font-size:12.5px;color:var(--muted);line-height:1.6}
+
+/* 相关推荐标签 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:8px}
+.rec-tags a{
+  font-size:13px;padding:6px 13px;border-radius:18px;
+  background:#f4f1ea;color:var(--ink-soft);
+  border:1px solid var(--line);
+  transition:background .15s,border-color .15s,color .15s;
+}
+.rec-tags a:hover{background:var(--accent-bg);border-color:var(--accent);color:var(--brand)}
+
+/* 精选/证言 */
+.quote-panel{
+  border-left:3px solid var(--accent);
+  background:var(--accent-bg);border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  padding:14px 16px;margin:10px 0;
+}
+.quote-panel p{font-size:14px;color:#4a3a12;font-style:italic;margin-bottom:6px}
+.quote-panel .by{font-size:12px;color:#8a6d1f;font-weight:600}
+
+/* 页尾 */
+.foot{
+  background:var(--brand);color:#c3ccd5;
+  padding:30px 0 22px;margin-top:14px;
+}
+.foot .wrap{width:min(var(--w),100% - 32px);margin:0 auto}
+.foot-top{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px;
+  padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.1);
+}
+.foot-brand .brand-text{color:#fff;font-size:18px;margin-bottom:8px}
+.foot-brand p{font-size:12.5px;color:#9fb0bf;max-width:280px;line-height:1.7}
+.foot-col h5{
+  font-size:12px;letter-spacing:1px;color:var(--accent-soft);
+  text-transform:uppercase;margin-bottom:10px;
+}
+.foot-col a{
+  display:block;font-size:12.5px;color:#b7c3ce;padding:3px 0;
+  transition:color .14s;
+}
+.foot-col a:hover{color:#fff}
+.foot-bottom{
+  display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;
+  align-items:center;padding-top:16px;font-size:11.5px;color:#8a9aa8;
+}
+.foot-bottom .note{color:#7f8f9d}
+.foot-bottom .note b{color:#a9b7c2;font-weight:600}
+
+/* 移动端菜单按钮 */
+.mobile-menu-btn{
+  display:none;background:none;border:1px solid var(--line-strong);
+  border-radius:7px;padding:6px 10px;font-size:12.5px;color:var(--ink-soft);
+  cursor:pointer;font-family:var(--font);
+}
+.mobile-nav{display:none}
+
+/* 响应式 */
+@media (max-width:1120px){
+  .layout{grid-template-columns:170px minmax(0,1fr);gap:20px}
+  .col-right{display:none}
+  .head-nav a{padding:6px 8px;font-size:13px}
+  .search-box input{width:150px}
+}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;gap:16px}
+  .col-left{position:static;order:2}
+  .col-left .side-panel{margin-bottom:12px}
+  .col-main{order:1}
+  .col-left .side-nav{display:flex;flex-wrap:wrap;gap:4px}
+  .col-left .side-nav a{flex:0 0 auto;padding:5px 10px;border:1px solid var(--line);font-size:12.5px}
+  .col-left .side-nav a .n{display:none}
+  .hero .wrap{grid-template-columns:1fr;gap:18px}
+  .hero h1{font-size:32px}
+  .hero-visual{min-height:auto;max-width:420px}
+  .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .compare{grid-template-columns:1fr}
+  .comments{grid-template-columns:1fr}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .head-nav{display:none}
+  .mobile-menu-btn{display:inline-flex}
+  .mobile-nav{
+    display:none;position:absolute;top:var(--head-h);left:0;right:0;
+    background:#fff;border-bottom:1px solid var(--line);
+    padding:10px 16px;z-index:54;box-shadow:var(--shadow);
+  }
+  .mobile-nav.open{display:flex;flex-wrap:wrap;gap:6px}
+  .mobile-nav a{
+    font-size:13px;padding:6px 12px;border:1px solid var(--line);
+    border-radius:18px;color:var(--ink-soft);
+  }
+  .mobile-nav a:hover{background:var(--accent-bg);border-color:var(--accent)}
+  .search-box input{width:130px}
+}
+@media (max-width:520px){
+  .card-grid{grid-template-columns:1fr}
+  .section{padding:17px 16px}
+  .section h2{font-size:19px}
+  .hero h1{font-size:28px}
+  .hero-lead{font-size:14px}
+  .foot-top{grid-template-columns:1fr}
+  .search-box input{width:110px;font-size:12px}
+  .head .wrap{gap:12px}
+  .brand-text{font-size:17px}
+  .announce{font-size:12px}
+  .announce .wrap{width:calc(100% - 20px)}
+  .compact-list li{flex-wrap:wrap;gap:2px 8px}
+  .compact-list .date{flex-basis:100%;font-size:11px}
+}
+</style>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="announce" role="region" aria-label="站点公告">
+  <div class="wrap">
+    <span class="dot" aria-hidden="true"></span>
+    <b>今日上新</b>
+    <span class="sep">|</span>
+    <span>每日三大赛事速递已更新 · 新手指南同步开放</span>
+    <span class="sep">|</span>
+    <span>参赛项目对比表已上线</span>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="head">
+  <div class="wrap">
+    <a class="brand" href="/#top" aria-label="51每日大赛首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 23l5-12 4.5 7 4.5-11 6 16" stroke="#f5c542" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="26" cy="7" r="2.2" fill="#f5c542"/>
+        </svg>
+      </span>
+      <span class="brand-text">51每日大赛</span>
+    </a>
+    <nav class="head-nav" aria-label="主题导航">
+      <a href="/#hot">热门推荐</a>
+      <a href="/#latest">最新动态</a>
+      <a href="/#cats">分类入口</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">参赛指南</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#news">相关资讯</a>
+    </nav>
+    <div class="head-tools">
+      <div class="search-box">
+        <input type="search" id="siteSearch" placeholder="搜索赛事/项目" aria-label="搜索页面内容">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>
+        </svg>
+        <div class="search-feedback" id="searchFeedback" role="status"></div>
+      </div>
+      <a class="head-cta" href="/#guide">参赛指南</a>
+      <button class="mobile-menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">频道</button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="移动端频道导航">
+    <a href="/#hot">热门推荐</a>
+    <a href="/#latest">最新动态</a>
+    <a href="/#cats">分类入口</a>
+    <a href="/#deep">深度解析</a>
+    <a href="/#guide">参赛指南</a>
+    <a href="/#faq">常见问答</a>
+    <a href="/#comments">用户评论</a>
+    <a href="/#news">相关资讯</a>
+    <a href="/#rec">相关推荐</a>
+  </nav>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="hero-badge">每日赛事聚合 · 参赛信息速递</span>
+      <h1>51每日大赛</h1>
+      <p class="hero-lead">
+        每天为你整理当日开赛项目、速赛结果与次日预告。涵盖<strong>每日赛事速递</strong>、<strong>参赛指南</strong>与<strong>赛事对比</strong>，适合想快速了解每日赛程安排与备赛要点的爱好者。
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#hot">查看今日热门</a>
+        <a class="btn btn-ghost" href="/#guide">怎么参赛</a>
+      </div>
+      <div class="hero-meta">
+        <span><b>12</b>个在赛项目</span>
+        <span><b>06:00</b>晨间赛更新</span>
+        <span><b>21:30</b>次日预告</span>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="hs1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#f5c542" stop-opacity=".9"/>
+            <stop offset="1" stop-color="#c8961e" stop-opacity=".2"/>
+          </linearGradient>
+        </defs>
+        <rect x="20" y="28" width="380" height="244" rx="16" fill="#ffffff" opacity=".06"/>
+        <rect x="36" y="44" width="348" height="212" rx="12" fill="#0a1520" stroke="#2a4256"/>
+        <rect x="54" y="62" width="120" height="12" rx="6" fill="#f5c542" opacity=".9"/>
+        <rect x="54" y="84" width="70" height="8" rx="4" fill="#6d8298"/>
+        <rect x="54" y="108" width="150" height="64" rx="8" fill="#12293d"/>
+        <rect x="68" y="122" width="58" height="8" rx="4" fill="#f5c542" opacity=".7"/>
+        <rect x="68" y="138" width="94" height="6" rx="3" fill="#4f677c"/>
+        <rect x="68" y="152" width="76" height="6" rx="3" fill="#4f677c"/>
+        <rect x="220" y="108" width="146" height="64" rx="8" fill="#12293d"/>
+        <rect x="234" y="122" width="48" height="8" rx="4" fill="#f5c542" opacity=".7"/>
+        <rect x="234" y="138" width="104" height="6" rx="3" fill="#4f677c"/>
+        <rect x="234" y="152" width="82" height="6" rx="3" fill="#4f677c"/>
+        <rect x="54" y="186" width="312" height="50" rx="8" fill="#12293d"/>
+        <rect x="70" y="200" width="80" height="8" rx="4" fill="#f5c542" opacity=".55"/>
+        <rect x="70" y="216" width="220" height="6" rx="3" fill="#4f677c"/>
+        <circle cx="334" cy="210" r="14" fill="url(#hs1)"/>
+        <path d="M327 210l5 5 9-10" stroke="#0a1520" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 三栏主内容区 -->
+<div class="layout" id="mainLayout">
+
+  <!-- 左栏 -->
+  <aside class="col-left" aria-label="频道与分类导航">
+    <div class="side-panel">
+      <div class="side-title">频道导航</div>
+      <nav class="side-nav" aria-label="左栏频道">
+        <a href="/#intro">赛事简介 <span class="n">01</span></a>
+        <a href="/#hot">热门内容推荐 <span class="n">02</span></a>
+        <a href="/#latest">最新动态 <span class="n">03</span></a>
+        <a href="/#cats">分类入口 <span class="n">04</span></a>
+        <a href="/#deep">深度解析 <span class="n">05</span></a>
+        <a href="/#guide">参赛指南 <span class="n">06</span></a>
+        <a href="/#faq">常见问答 <span class="n">07</span></a>
+        <a href="/#comments">用户评论 <span class="n">08</span></a>
+        <a href="/#news">相关资讯 <span class="n">09</span></a>
+        <a href="/#rec">相关推荐 <span class="n">10</span></a>
+      </nav>
+    </div>
+    <div class="side-panel">
+      <div class="side-title">项目标签</div>
+      <div class="tag-cloud">
+        <a href="#cats">每日速赛</a>
+        <a href="#cats">团队接力</a>
+        <a href="#cats">限时挑战</a>
+        <a href="#cats">积分排位</a>
+        <a href="#cats">新秀场</a>
+        <a href="#cats">周末长赛</a>
+        <a href="#deep">备赛要点</a>
+        <a href="#faq">报名条件</a>
+      </div>
+    </div>
+    <div class="side-panel">
+      <div class="side-title">今日赛程</div>
+      <ul class="hot-list">
+        <li><a href="#latest">06:00 晨间速赛 · 轻量组</a><div class="meta">已开赛 · 8 组</div></li>
+        <li><a href="#latest">10:30 团队接力 · 第二日</a><div class="meta">进行中 · 6 队</div></li>
+        <li><a href="#latest">14:00 限时挑战 · 进阶</a><div class="meta">候场 · 12 人</div></li>
+        <li><a href="#latest">19:30 积分排位 · 夜间场</a><div class="meta">待开始 · 24 人</div></li>
+        <li><a href="#latest">21:30 次日赛程预告</a><div class="meta">更新中</div></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- 中栏 -->
+  <main class="col-main" id="colMain">
+
+    <!-- 01 内容简介 -->
+    <section class="section" id="intro">
+      <h2><span class="idx">01</span>内容简介</h2>
+      <p class="sub">了解每日赛事的组织方式、参赛人群与内容节奏</p>
+      <p><strong>51每日大赛</strong>是一个以每日赛事为核心的内容聚合页，围绕每日速赛、团队接力、限时挑战与积分排位等常见项目，整理当天的赛程安排、参赛要点与结果速递。页面内容以“当天可用”为原则，把开赛时间、分组规则、备赛清单与常见问题放在同一处，方便参赛者与围观者快速定位信息。</p>
+      <p>对于刚接触每日赛事的人来说，最常遇到的问题是信息分散：赛程在公告里、报名条件在另一个页面、结果又需要单独查找。这里按“先看今天比什么，再看怎么参加，最后看结果与复盘”的顺序组织内容，把<strong>每日赛事速递</strong>与<strong>参赛指南</strong>放在相邻位置，减少来回跳转。</p>
+      <p>页面同时提供<strong>赛事对比</strong>视角，把轻量组与进阶组、个人挑战与团队接力放在同一张对照面板里，帮助正在犹豫报哪个项目的人快速判断。所有项目名称、时间与分组信息均为示例，用于展示页面结构，实际安排以各赛事主办方公布为准。</p>
+      <p>内容更新节奏跟随每日赛程：早晨推送当日开赛项目，午间补充进行中的赛况摘要，晚间发布次日预告与复盘要点。适合通勤路上快速浏览，也适合备赛时逐项核对。页面不收集个人信息，搜索与分类筛选均在本地完成，无需登录即可阅读全部正文。</p>
+    </section>
+
+    <!-- 02 热门内容推荐 -->
+    <section class="section" id="hot">
+      <h2><span class="idx">02</span>热门内容推荐</h2>
+      <p class="sub">按当日关注度整理的赛事条目，含项目类型与备赛看点</p>
+      <div class="card-grid">
+        <article class="card">
+          <h4>晨间速赛轻量组：15 分钟三关连闯</h4>
+          <div class="tags"><span class="type">每日速赛</span><span>新手友好</span><span>15分钟</span></div>
+          <p class="blurb">三关难度递进，适合利用碎片时间参与。看点在于第二关的分值翻倍机制，稳健路线更占优。</p>
+          <div class="meta"><span>热度 <b>9.4</b></span><span>更新 今日 06:12</span><span>评分 4.7</span></div>
+        </article>
+        <article class="card">
+          <h4>团队接力第二日：四人协作的分工策略</h4>
+          <div class="tags"><span class="type">团队接力</span><span>协作</span><span>四人队</span></div>
+          <p class="blurb">第二日赛程加入交接计时，队伍需提前确定前后顺序。看点在于第三棒与第四棒的时间窗口。</p>
+          <div class="meta"><span>热度 <b>9.1</b></span><span>更新 今日 10:35</span><span>评分 4.6</span></div>
+        </article>
+        <article class="card">
+          <h4>限时挑战进阶场：90 秒决策窗口</h4>
+          <div class="tags"><span class="type">限时挑战</span><span>进阶</span><span>决策</span></div>
+          <p class="blurb">每 90 秒开放一次选择，错误选择会压缩后续时间。适合已熟悉基础规则、想提升节奏的参赛者。</p>
+          <div class="meta"><span>热度 <b>8.8</b></span><span>更新 今日 14:02</span><span>评分 4.5</span></div>
+        </article>
+        <article class="card">
+          <h4>积分排位夜间场：连续三天累计积分</h4>
+          <div class="tags"><span class="type">积分排位</span><span>夜间场</span><span>累计</span></div>
+          <p class="blurb">夜间场积分按完成度加权，连续参与有额外系数。看点在于第三天冲刺阶段的积分策略。</p>
+          <div class="meta"><span>热度 <b>8.6</b></span><span>更新 今日 19:40</span><span>评分 4.4</span></div>
+        </article>
+        <article class="card">
+          <h4>新秀场首秀：第一次参赛怎么选项目</h4>
+          <div class="tags"><span class="type">新秀场</span><span>入门</span><span>选项目</span></div>
+          <p class="blurb">面向首次参赛者，按时间投入与规则复杂度给出选择建议，帮你在速赛与接力之间做取舍。</p>
+          <div class="meta"><span>热度 <b>8.3</b></span><span>更新 今日 08:20</span><span>评分 4.6</span></div>
+        </article>
+        <article class="card">
+          <h4>周末长赛预告：两小时耐力组规则拆解</h4>
+          <div class="tags"><span class="type">周末长赛</span><span>耐力</span><span>规则拆解</span></div>
+          <p class="blurb">长赛采用分阶段积分，中途休息不计时。提前熟悉阶段划分，有助于安排体力与节奏。</p>
+          <div class="meta"><span>热度 <b>8.0</b></span><span>更新 今日 21:05</span><span>评分 4.3</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 03 最新动态 -->
+    <section class="section" id="latest">
+      <h2><span class="idx">03</span>最新动态</h2>
+      <p class="sub">当日与次日的赛程更新、结果摘要与分组调整</p>
+      <ul class="compact-list">
+        <li><span class="date">06:00</span><span class="name">晨间速赛轻量组开赛</span><span class="desc">共 8 组，首轮取前四进入加赛。</span></li>
+        <li><span class="date">07:40</span><span class="name">轻量组首轮结果速递</span><span class="desc">第二关分值翻倍成为主要分差来源。</span></li>
+        <li><span class="date">10:30</span><span class="name">团队接力第二日开赛</span><span class="desc">6 支队伍进入交接计时环节。</span></li>
+        <li><span class="date">12:15</span><span class="name">接力赛中段摘要</span><span class="desc">第三棒交接顺序调整，时间窗口收窄。</span></li>
+        <li><span class="date">14:00</span><span class="name">限时挑战进阶场候场</span><span class="desc">12 名参赛者进入 90 秒决策窗口。</span></li>
+        <li><span class="date">16:20</span><span class="name">进阶场规则补充说明</span><span class="desc">错误选择后的时间压缩比例已公示。</span></li>
+        <li><span class="date">19:30</span><span class="name">积分排位夜间场待开始</span><span class="desc">24 人名单确认，连续参与系数生效。</span></li>
+        <li><span class="date">21:30</span><span class="name">次日赛程预告发布</span><span class="desc">明日新增新秀场，速赛时间提前半小时。</span></li>
+      </ul>
+    </section>
+
+    <!-- 04 分类入口 -->
+    <section class="section" id="cats">
+      <h2><span class="idx">04</span>分类入口</h2>
+      <p class="sub">按项目类型与参赛场景划分的入口，点击定位相关内容</p>
+      <div class="cat-grid">
+        <a class="cat" href="#hot"><b>每日速赛</b><span>碎片时间 · 三关连闯</span></a>
+        <a class="cat" href="#hot"><b>团队接力</b><span>四人协作 · 交接计时</span></a>
+        <a class="cat" href="#hot"><b>限时挑战</b><span>决策窗口 · 进阶场</span></a>
+        <a class="cat" href="#hot"><b>积分排位</b><span>累计积分 · 夜间场</span></a>
+        <a class="cat" href="#hot"><b>新秀场</b><span>首次参赛 · 项目选择</span></a>
+        <a class="cat" href="#hot"><b>周末长赛</b><span>耐力组 · 分阶段积分</span></a>
+        <a class="cat" href="#deep"><b>备赛要点</b><span>规则熟悉 · 节奏安排</span></a>
+        <a class="cat" href="#faq"><b>报名条件</b><span>参赛资格 · 组队要求</span></a>
+      </div>
+    </section>
+
+    <!-- 05 深度解析 -->
+    <section class="section" id="deep">
+      <h2><span class="idx">05</span>深度解析</h2>
+      <p class="sub">从项目结构、参赛节奏到对比选择，拆解每日赛事的关键差异</p>
+
+      <h3>每日赛事的三种常见结构</h3>
+      <p>从近期的赛程安排看，每日赛事大致分为三类结构：短周期速赛、多日累计排位、团队协作接力。三者的区别不在于难度高低，而在于时间投入与决策密度的不同。</p>
+      <ul class="bullets">
+        <li><strong>短周期速赛</strong>：单场 15—30 分钟，当天出结果，适合碎片时间参与。</li>
+        <li><strong>多日累计排位</strong>：连续参与获得积分系数，适合能稳定投入的参赛者。</li>
+        <li><strong>团队协作接力</strong>：需要提前组队与分工，交接环节是主要变量。</li>
+      </ul>
+      <p>理解这三种结构后，再去看<strong>51每日大赛</strong>当日赛程，就能快速判断哪些项目适合自己。比如只有午休时间的人，优先看速赛；能连续三天晚间在线的人，再看积分排位。</p>
+
+      <h3>轻量组与进阶组的对比</h3>
+      <p>同一项目常设轻量组与进阶组，差异集中在规则复杂度与容错空间。下方对照面板把两组的关键区别并列，方便正在犹豫报哪一组的人快速判断。</p>
+      <div class="compare">
+        <div class="panel">
+          <h4><span class="pill">轻量组</span>规则少 · 容错高</h4>
+          <ul>
+            <li>三关基础规则，无额外限制</li>
+            <li>单次失误不直接淘汰</li>
+            <li>适合首次参赛与碎片时间</li>
+            <li>结果当天公示</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h4><span class="pill alt">进阶组</span>决策密 · 分差大</h4>
+          <ul>
+            <li>加入决策窗口与时间压缩</li>
+            <li>关键选择影响后续节奏</li>
+            <li>适合熟悉规则、想冲排名的人</li>
+            <li>结果当天公示并附复盘摘要</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>参赛节奏：从看到赛程到完成比赛</h3>
+      <p>一个完整的参赛节奏通常包含四个节点：确认当日项目、核对报名条件、预留比赛时间、赛后查看结果摘要。前两个节点决定“能不能参加”，后两个节点决定“参不参加得舒服”。</p>
+      <p>以团队接力为例，最容易被忽略的是交接顺序的确定时间。建议在开赛前一小时完成分工，把第三棒与第四棒的人选固定下来，避免中途调整打乱节奏。速赛则更看重开局：第一关稳定拿分，第二关再考虑是否冲翻倍。</p>
+      <p>在<strong>51每日大赛</strong>的内容组织里，赛程、规则与结果摘要按同一时间轴排列，正是为了减少参赛者在多个入口之间来回切换的成本。把“看赛程—对规则—看结果”串成一条线，是每日赛事内容最实用的价值。</p>
+
+      <h3>赛事对比时的三个判断维度</h3>
+      <ul class="bullets">
+        <li><strong>时间匹配度</strong>：项目时长是否落在你可用的时间段内。</li>
+        <li><strong>规则熟悉度</strong>：是否需要额外花时间理解新规则。</li>
+        <li><strong>结果反馈方式</strong>：当天出结果，还是多日累计后统一公布。</li>
+      </ul>
+      <p>这三个维度没有绝对优劣，关键是和自身可用时间对齐。若只是想在通勤间隙参与，速赛的即时反馈更友好；若目标是冲一个稳定的排位，多日累计项目更能体现投入。</p>
+    </section>
+
+    <!-- 06 参赛指南 -->
+    <section class="section" id="guide">
+      <h2><span class="idx">06</span>参赛指南</h2>
+      <p class="sub">从浏览赛程到完成参赛的基本路径与操作说明</p>
+      <div class="steps">
+        <div class="step">
+          <span class="num">1</span>
+          <div><b>确认当日开赛项目</b><span>在“最新动态”查看当天各时段的项目名称与分组，优先匹配自己的可用时间。</span></div>
+        </div>
+        <div class="step">
+          <span class="num">2</span>
+          <div><b>核对报名条件与组队要求</b><span>个人项目通常无组队限制；团队项目需提前确定人数与交接顺序，具体以当日说明为准。</span></div>
+        </div>
+        <div class="step">
+          <span class="num">3</span>
+          <div><b>阅读规则与备赛要点</b><span>速赛关注分值机制，进阶场关注决策窗口，接力关注交接计时。深度解析中有分类型拆解。</span></div>
+        </div>
+        <div class="step">
+          <span class="num">4</span>
+          <div><b>赛后查看结果摘要</b><span>结果摘要按时间顺序更新，含主要分差来源与次日预告，方便复盘与安排下一场。</span></div>
+        </div>
+        <div class="step">
+          <span class="num">5</span>
+          <div><b>使用页面搜索与分类定位</b><span>顶部搜索框支持按项目名或类型筛选当前页面内容，分类入口可按项目类型跳转。</span></div>
+        </div>
+      </div>
+      <p style="margin-top:12px">移动端访问时，频道导航会收纳为“频道”按钮，点击展开横向入口；左栏的分类与标签会移到主内容之后，仍然可以直接跳转。</p>
+    </section>
+
+    <!-- 07 FAQ -->
+    <section class="section faq" id="faq">
+      <h2><span class="idx">07</span>常见问答</h2>
+      <p class="sub">围绕参赛条件、项目选择与赛程节奏的高频问题</p>
+      <details>
+        <summary>51每日大赛适合什么样的人看？</summary>
+        <div class="answer">适合想每天快速了解赛程安排、参赛条件与项目差异的人，包括首次参赛的新手和已经固定参与某类项目的爱好者。如果你只关注某一类项目，可以通过分类入口或搜索框直接定位。</div>
+      </details>
+      <details>
+        <summary>每日赛事一般多久更新一次？</summary>
+        <div class="answer">页面内容按当日赛程推进更新：早晨更新当日开赛项目，午间补充进行中的赛况摘要，晚间发布次日预告与复盘要点。具体项目结果以当日实际公布时间为准。</div>
+      </details>
+      <details>
+        <summary>第一次参赛，速赛和团队接力哪个更适合？</summary>
+        <div class="answer">如果时间零散、想先熟悉规则，速赛更合适；团队接力需要提前组队与分工，适合已经有固定同伴的人。两者在难度上没有绝对高低，主要看可投入时间与是否有人配合。</div>
+      </details>
+      <details>
+        <summary>轻量组和进阶组的区别在哪里？</summary>
+        <div class="answer">主要区别在规则复杂度与容错空间。轻量组规则更少、单次失误不直接淘汰；进阶组加入决策窗口与时间压缩，关键选择会影响后续节奏。初次参与建议从轻量组开始。</div>
+      </details>
+      <details>
+        <summary>团队接力的交接顺序怎么安排比较稳？</summary>
+        <div class="answer">一般建议把节奏最稳的人放在第三棒，把冲刺能力较强的人放在第四棒。开赛前一小时确定顺序，避免中途调整。具体规则以当日接力赛说明为准。</div>
+      </details>
+      <details>
+        <summary>页面上的分类和搜索能用来找具体项目吗？</summary>
+        <div class="answer">可以。顶部搜索框会对当前页面可见内容做本地筛选，输入项目名或类型词即可；分类入口按每日速赛、团队接力、限时挑战等类型跳转，适合快速缩小范围。</div>
+      </details>
+    </section>
+
+    <!-- 08 用户评论 -->
+    <section class="section" id="comments">
+      <h2><span class="idx">08</span>用户评论</h2>
+      <p class="sub">来自不同参赛者的真实语气反馈，含中性评价</p>
+      <div class="comments">
+        <div class="comment"><div class="who"><span class="avatar">晨</span><span class="name">晨跑看赛</span><span class="time">今天 07:20</span></div><p>速赛的时间安排很友好，上班前能看完首轮结果。</p></div>
+        <div class="comment"><div class="who"><span class="avatar">木</span><span class="name">木木三</span><span class="time">今天 08:05</span></div><p>轻量组第二关翻倍机制确实关键，昨天没注意吃了亏。</p></div>
+        <div class="comment"><div class="who"><span class="avatar">阿</span><span class="name">阿远</span><span class="time">今天 09:12</span></div><p>团队接力的交接说明如果能再提前一点发就好了。</p></div>
+        <div class="comment"><div class="who"><span class="avatar">L</span><span class="name">Lynn</span><span class="time">今天 10:40</span></div><p>分类入口做得很清楚，按项目点进去省了不少找的时间。</p></div>
+        <div class="comment"><div class="who"><span class="avatar">小</span><span class="name">小满</span><span class="time">今天 11:15</span></div><p>进阶场的决策窗口有点紧张，但复盘摘要写得挺明白。</p></div>
+        <div class="comment"><div class="who"><span class="avatar">周</span><span class="name">周三见</span><span class="time">今天 12:30</span></div><p>积分排位连续参与有系数，这个提醒很实用。</p></div>
+        <div class="comment"><div class="who"><span class="avatar">老</span><span class="name">老陶</span><span class="time">今天 13:05</span></div><p>内容偏信息整理，没有太多花哨的东西，适合快速浏览。</p></div>
+        <div class="comment"><div class="who"><span class="avatar">林</span><span class="name">林间风</span><span class="time">今天 14:22</span></div><p>搜索框试了一下，输入“速赛”能筛出相关卡片，挺方便。</p></div>
+        <div class="comment"><div class="who"><span class="avatar">Y</span><span class="name">Yuki</span><span class="time">今天 15:10</span></div><p>新秀场的项目选择建议对第一次参赛的人很友好。</p></div>
+        <div class="comment"><div class="who"><span class="avatar">大</span><span class="name">大川</span><span class="time">今天 16:40</span></div><p>周末长赛的规则拆解如果能配一张阶段表就更直观了。</p></div>
+        <div class="comment"><div class="who"><span class="avatar">南</span><span class="name">南岸</span><span class="time">今天 17:25</span></div><p>整体节奏比较稳，晚间预告是每天必看的部分。</p></div>
+        <div class="comment"><div class="who"><span class="avatar">c</span><span class="name">chen</span><span class="time">今天 18:50</span></div><p>手机上看三栏会变成单栏，频道收进按钮里，操作还算顺手。</p></div>
+        <div class="comment"><div class="who"><span class="avatar">飞</span><span class="name">飞鱼</span><span class="time">今天 19:35</span></div><p>希望后续能加上历史赛事对比，现在只有当天的。</p></div>
+        <div class="comment"><div class="who"><span class="avatar">星</span><span class="name">星野</span><span class="time">今天 20:18</span></div><p>评论区的语气比较真实，有说好的也有提建议的。</p></div>
+      </div>
+    </section>
+
+    <!-- 09 相关资讯 -->
+    <section class="section" id="news">
+      <h2><span class="idx">09</span>相关资讯</h2>
+      <p class="sub">与每日赛事节奏相关的规则调整、项目预告与活动说明</p>
+      <ul class="news">
+        <li>
+          <div class="headline"><a href="#deep">本周速赛规则微调：第二关分值翻倍比例调整</a><time>2025-06-10</time></div>
+          <p class="excerpt">第二关翻倍比例由原设定调整为更温和的区间，对稳健路线更友好。</p>
+        </li>
+        <li>
+          <div class="headline"><a href="#guide">团队接力新增交接计时公示环节</a><time>2025-06-09</time></div>
+          <p class="excerpt">接力赛将在每轮交接后公示计时窗口，方便队伍及时调整顺序。</p>
+        </li>
+        <li>
+          <div class="headline"><a href="#hot">新秀场首次开放：面向未参赛用户的项目选择说明</a><time>2025-06-08</time></div>
+          <p class="excerpt">新秀场按时间投入分档，提供入门项目与规则速览，降低首次参赛门槛。</p>
+        </li>
+        <li>
+          <div class="headline"><a href="#deep">积分排位夜间场连续参与系数说明</a><time>2025-06-07</time></div>
+          <p class="excerpt">连续三天参与夜间场可获得积分系数加成，具体比例按完成度计算。</p>
+        </li>
+        <li>
+          <div class="headline"><a href="#hot">周末长赛阶段划分公布：两小时耐力组</a><time>2025-06-06</time></div>
+          <p class="excerpt">长赛分为四个阶段，中途休息不计时，阶段间积分独立计算。</p>
+        </li>
+        <li>
+          <div class="headline"><a href="#faq">参赛条件常见疑问汇总更新</a><time>2025-06-05</time></div>
+          <p class="excerpt">围绕组队人数、设备要求与时间冲突处理，补充了六条高频问答。</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="section" id="rec">
+      <h2><span class="idx">10</span>相关推荐</h2>
+      <p class="sub">按内容方向整理的延伸入口，便于继续查找同类项目</p>
+      <div class="rec-tags">
+        <a href="#hot">每日速赛三关连闯</a>
+        <a href="#hot">团队接力交接计时</a>
+        <a href="#hot">限时挑战90秒决策</a>
+        <a href="#hot">积分排位累计系数</a>
+        <a href="#hot">新秀场入门项目</a>
+        <a href="#hot">周末长赛阶段积分</a>
+        <a href="#deep">轻量组进阶组对比</a>
+        <a href="#faq">首次参赛报名条件</a>
+      </div>
+    </section>
+
+    <!-- 11 精选内容 -->
+    <section class="section" id="pick">
+      <h2><span class="idx">11</span>精选内容</h2>
+      <p class="sub">从当日内容中挑选的备赛提示与参赛者反馈</p>
+      <div class="quote-panel">
+        <p>“速赛不要一上来就冲翻倍，先把第一关的稳定分拿到，第二关再决定要不要冒险。”</p>
+        <div class="by">—— 连续参与轻量组三周的参赛者反馈</div>
+      </div>
+      <h3>今日备赛提示</h3>
+      <ul class="bullets">
+        <li>团队接力开赛前一小时确认交接顺序，避免临时调整。</li>
+        <li>限时挑战进阶场提前熟悉 90 秒决策窗口的节奏。</li>
+        <li>积分排位夜间场注意连续参与系数的生效条件。</li>
+        <li>首次参赛优先选择规则更少的轻量组，先跑通完整流程。</li>
+      </ul>
+      <p>以上提示来自参赛者反馈与规则说明的汇总，具体执行以当日赛事说明为准。每日赛程更新后，精选内容会同步调整。</p>
+    </section>
+
+  </main>
+
+  <!-- 右栏 -->
+  <aside class="col-right" aria-label="辅助阅读">
+    <div class="side-panel">
+      <div class="side-title">页内目录</div>
+      <nav class="toc" aria-label="页内目录">
+        <a href="#intro">内容简介</a>
+        <a href="#hot">热门内容推荐</a>
+        <a href="#latest">最新动态</a>
+        <a href="#cats">分类入口</a>
+        <a href="#deep">深度解析</a>
+        <a href="#guide">参赛指南</a>
+        <a href="#faq">常见问答</a>
+        <a href="#comments">用户评论</a>
+        <a href="#news">相关资讯</a>
+        <a href="#rec">相关推荐</a>
+        <a href="#pick">精选内容</a>
+      </nav>
+    </div>
+    <div class="side-panel">
+      <div class="side-title">热门条目</div>
+      <ul class="hot-list">
+        <li><a href="#hot">晨间速赛轻量组三关连闯</a><div class="meta">热度 9.4 · 今日更新</div></li>
+        <li><a href="#hot">团队接力第二日分工策略</a><div class="meta">热度 9.1 · 进行中</div></li>
+        <li><a href="#hot">限时挑战进阶场决策窗口</a><div class="meta">热度 8.8 · 候场</div></li>
+        <li><a href="#hot">积分排位夜间场累计系数</a><div class="meta">热度 8.6 · 待开始</div></li>
+        <li><a href="#deep">轻量组与进阶组对比</a><div class="meta">阅读 2.1k</div></li>
+      </ul>
+    </div>
+    <div class="side-panel">
+      <div class="side-title">延伸阅读</div>
+      <ul class="hot-list">
+        <li><a href="#faq">首次参赛怎么选项目</a></li>
+        <li><a href="#guide">参赛路径五步说明</a></li>
+        <li><a href="#news">本周速赛规则微调</a></li>
+        <li><a href="#deep">赛事对比的三个维度</a></li>
+      </ul>
+    </div>
+  </aside>
+
+</div>
+
+<!-- 页尾 -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="brand-text">51每日大赛</div>
+        <p>每日赛事速递与参赛指南聚合页，整理赛程安排、项目对比与备赛要点，帮助参赛者快速定位当日可用信息。</p>
+      </div>
+      <div class="foot-col">
+        <h5>内容频道</h5>
+        <a href="/#hot">热门内容推荐</a>
+        <a href="/#latest">最新动态</a>
+        <a href="/#cats">分类入口</a>
+        <a href="/#deep">深度解析</a>
+      </div>
+      <div class="foot-col">
+        <h5>参赛帮助</h5>
+        <a href="/#guide">参赛指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#comments">用户评论</a>
+        <a href="/#news">相关资讯</a>
+      </div>
+      <div class="foot-col">
+        <h5>更多入口</h5>
+        <a href="/#rec">相关推荐</a>
+        <a href="/#pick">精选内容</a>
+        <a href="/#intro">内容简介</a>
+        <a href="/#top">回到顶部</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2025 51每日大赛 · 内容聚合示例页</span>
+      <span class="note">部分内容为示例数据，仅用于展示页面结构</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端菜单 */
+  var menuBtn = document.getElementById('menuBtn');
+  var mobileNav = document.getElementById('mobileNav');
+  if(menuBtn && mobileNav){
+    menuBtn.addEventListener('click', function(){
+      var open = mobileNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  /* 本地搜索筛选 */
+  var input = document.getElementById('siteSearch');
+  var feedback = document.getElementById('searchFeedback');
+  var main = document.getElementById('colMain');
+  if(!input || !feedback || !main) return;
+
+  var sections = Array.prototype.slice.call(main.querySelectorAll('.section'));
+
+  function resetSections(){
+    sections.forEach(function(sec){
+      sec.style.display = '';
+      sec.querySelectorAll('.card, .compact-list li, .cat, .comment, .news li, .rec-tags a, details').forEach(function(item){
+        item.style.display = '';
+      });
+    });
+  }
+
+  function runSearch(q){
+    q = q.trim();
+    if(!q){
+      resetSections();
+      feedback.classList.remove('show');
+      feedback.textContent = '';
+      return;
+    }
+    var lower = q.toLowerCase();
+    var total = 0;
+    sections.forEach(function(sec){
+      var items = sec.querySelectorAll('.card, .compact-list li, .cat, .comment, .news li, .rec-tags a, details');
+      if(items.length === 0){
+        sec.style.display = 'none';
+        return;
+      }
+      var matched = 0;
+      items.forEach(function(item){
+        var txt = (item.textContent || '').toLowerCase();
+        if(txt.indexOf(lower) !== -1){
+          item.style.display = '';
+          matched++;
+        }else{
+          item.style.display = 'none';
+        }
+      });
+      sec.style.display = matched > 0 ? '' : 'none';
+      total += matched;
+    });
+    feedback.classList.add('show');
+    feedback.textContent = total > 0
+      ? '找到 ' + total + ' 条与“' + q + '”相关的内容'
+      : '没有找到与“' + q + '”相关的内容，换个项目名试试';
+  }
+
+  var timer = null;
+  input.addEventListener('input', function(){
+    clearTimeout(timer);
+    timer = setTimeout(function(){ runSearch(input.value); }, 180);
+  });
+  input.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){
+      clearTimeout(timer);
+      runSearch(input.value);
+    }
+  });
+})();
+</script>
+
+</body>
+  </html>
