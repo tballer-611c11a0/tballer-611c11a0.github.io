@@ -1,0 +1,1306 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>51爆料每日大赛大乱斗-大乱斗每日爆料_大乱斗赛事追踪_大乱斗玩法对比</title>
+  <meta name="description" content="51爆料每日大赛大乱斗为你整理大乱斗每日爆料、赛事追踪与玩法对比。每期更新大乱斗热点、选手动态与冷门套路，适合关注乱斗竞技的玩家和内容爱好者。">
+  <meta name="keywords" content="大乱斗每日爆料,大乱斗赛事追踪,大乱斗玩法对比,乱斗竞技热点,大乱斗冷门套路">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231a1e2c'/%3E%3Cpath d='M8 12h16v3H8zm0 7h10v3H8z' fill='%23f0b34b'/%3E%3Ccircle cx='24' cy='22' r='3' fill='%23e05a4e'/%3E%3C/svg%3E">
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      --bg: #0f1219;
+      --panel: #181d28;
+      --panel-2: #1f2535;
+      --border: #2b3346;
+      --text: #e6e9f0;
+      --text-soft: #a6adc4;
+      --muted: #6d758c;
+      --primary: #f0b34b;
+      --primary-dim: #c48d2c;
+      --accent: #e05a4e;
+      --accent-2: #4f8cff;
+      --radius: 10px;
+      --radius-sm: 6px;
+      --shadow: 0 6px 20px rgba(0,0,0,0.35);
+      --font: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans SC', sans-serif;
+      --header-h: 126px;
+    }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--header-h);
+    }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 15px;
+      padding-top: var(--header-h);
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    img, svg {
+      display: block;
+      max-width: 100%;
+    }
+    .container {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    /* 吸顶区域 */
+    .sticky-wrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .announce-bar {
+      background: linear-gradient(90deg, #2a1e12, #1f1a2c);
+      color: #f5d9a8;
+      font-size: 13px;
+      padding: 6px 0;
+      text-align: center;
+      border-bottom: 1px solid #3b2f22;
+    }
+    .announce-bar span {
+      color: var(--primary);
+      font-weight: 600;
+      margin-right: 8px;
+    }
+    .site-header {
+      background: var(--panel);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 10px 0;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+    }
+    .brand-text {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: var(--primary);
+      line-height: 1.2;
+    }
+    .header-nav {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-soft);
+    }
+    .header-nav a:hover {
+      color: var(--primary);
+    }
+    .header-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .search-box {
+      display: flex;
+      align-items: center;
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 4px 12px;
+    }
+    .search-box input {
+      background: transparent;
+      border: none;
+      color: var(--text);
+      font-size: 13px;
+      outline: none;
+      width: 140px;
+    }
+    .search-box input::placeholder {
+      color: var(--muted);
+    }
+    .search-box button {
+      background: none;
+      border: none;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 14px;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    .search-box button:hover {
+      color: var(--primary);
+    }
+    .search-box button:focus-visible {
+      outline: 2px solid var(--primary);
+    }
+    .channel-bar {
+      display: flex;
+      gap: 18px;
+      padding: 8px 0 10px;
+      font-size: 13px;
+      color: var(--text-soft);
+      flex-wrap: wrap;
+      border-top: 1px solid var(--border);
+    }
+    .channel-bar a {
+      padding: 2px 0;
+      border-bottom: 2px solid transparent;
+    }
+    .channel-bar a:hover {
+      border-bottom-color: var(--primary);
+      color: var(--primary);
+    }
+    /* 首屏 */
+    .hero {
+      background: linear-gradient(135deg, #151b28 0%, #1a212f 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 28px 0 24px;
+      margin-bottom: 24px;
+    }
+    .hero-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+    }
+    .hero-content {
+      flex: 1 1 400px;
+    }
+    .hero h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 10px;
+      line-height: 1.25;
+    }
+    .hero-desc {
+      color: var(--text-soft);
+      font-size: 15px;
+      max-width: 600px;
+      margin-bottom: 16px;
+    }
+    .hero-meta {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .hero-meta span {
+      background: var(--panel-2);
+      padding: 3px 12px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+    }
+    .hero-visual {
+      flex: 0 0 220px;
+      display: flex;
+      justify-content: center;
+    }
+    /* 三栏布局 */
+    .main-grid {
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr) 240px;
+      gap: 24px;
+      align-items: start;
+      margin-bottom: 40px;
+    }
+    .left-sidebar {
+      position: sticky;
+      top: calc(var(--header-h) + 12px);
+      align-self: start;
+      background: var(--panel);
+      border-radius: var(--radius);
+      padding: 16px 12px;
+      border: 1px solid var(--border);
+    }
+    .left-sidebar h3 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .side-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .side-nav a {
+      display: block;
+      padding: 6px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+      color: var(--text-soft);
+      transition: background 0.15s;
+    }
+    .side-nav a:hover {
+      background: var(--panel-2);
+      color: var(--primary);
+    }
+    .side-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 16px;
+    }
+    .side-tags span {
+      font-size: 12px;
+      background: var(--panel-2);
+      padding: 3px 8px;
+      border-radius: 12px;
+      color: var(--text-soft);
+      border: 1px solid var(--border);
+    }
+    .main-content {
+      min-width: 0;
+    }
+    .right-sidebar {
+      position: sticky;
+      top: calc(var(--header-h) + 12px);
+      align-self: start;
+      background: var(--panel);
+      border-radius: var(--radius);
+      padding: 16px;
+      border: 1px solid var(--border);
+    }
+    .right-sidebar h3 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .toc {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+    .toc a {
+      color: var(--text-soft);
+      padding: 2px 0;
+    }
+    .toc a:hover {
+      color: var(--primary);
+    }
+    .hot-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+    .hot-list a {
+      color: var(--text-soft);
+      display: flex;
+      gap: 8px;
+    }
+    .hot-list a:hover {
+      color: var(--primary);
+    }
+    .hot-list .num {
+      color: var(--primary);
+      font-weight: 700;
+      min-width: 18px;
+    }
+    .extend-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .extend-tags a {
+      font-size: 12px;
+      background: var(--panel-2);
+      padding: 3px 10px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      color: var(--text-soft);
+    }
+    .extend-tags a:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+    /* 正文板块通用 */
+    section {
+      margin-bottom: 32px;
+      scroll-margin-top: calc(var(--header-h) + 16px);
+    }
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 22px;
+      background: var(--primary);
+      border-radius: 2px;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 14px;
+    }
+    .content-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+      transition: border-color 0.15s, transform 0.1s;
+    }
+    .content-card:hover {
+      border-color: var(--primary-dim);
+    }
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 8px;
+    }
+    .card-tags span {
+      font-size: 11px;
+      background: var(--panel-2);
+      padding: 2px 7px;
+      border-radius: 10px;
+      color: var(--text-soft);
+      border: 1px solid var(--border);
+    }
+    .card-desc {
+      font-size: 13px;
+      color: var(--text-soft);
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+    .card-meta {
+      font-size: 12px;
+      color: var(--muted);
+      display: flex;
+      gap: 12px;
+    }
+    /* 最新更新列表 */
+    .update-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .update-item {
+      display: flex;
+      gap: 16px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 10px 14px;
+      align-items: baseline;
+    }
+    .update-item .name {
+      font-weight: 600;
+      color: var(--text);
+      min-width: 140px;
+    }
+    .update-item .summary {
+      font-size: 13px;
+      color: var(--text-soft);
+    }
+    /* 分类入口 */
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    .cat-item {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-soft);
+      transition: background 0.15s;
+    }
+    .cat-item:hover {
+      background: var(--panel-2);
+      color: var(--primary);
+      border-color: var(--primary-dim);
+    }
+    /* 深度解析 */
+    .deep-dive {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 24px;
+    }
+    .deep-dive h3 {
+      font-size: 17px;
+      font-weight: 600;
+      margin: 18px 0 8px;
+      color: var(--primary);
+    }
+    .deep-dive h3:first-of-type {
+      margin-top: 0;
+    }
+    .deep-dive p {
+      font-size: 14px;
+      color: var(--text-soft);
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+    .deep-dive ul {
+      margin: 8px 0 16px 20px;
+      color: var(--text-soft);
+      font-size: 14px;
+    }
+    .deep-dive li {
+      margin-bottom: 6px;
+    }
+    /* 指南步骤 */
+    .guide-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 14px;
+    }
+    .step {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+    }
+    .step .num {
+      width: 28px;
+      height: 28px;
+      background: var(--primary);
+      color: #111;
+      font-weight: 700;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-bottom: 8px;
+    }
+    .step h4 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .step p {
+      font-size: 13px;
+      color: var(--text-soft);
+      line-height: 1.5;
+    }
+    /* FAQ */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    details {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+    }
+    details summary {
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      color: var(--text);
+      list-style: none;
+    }
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+    details summary::before {
+      content: '▸';
+      margin-right: 8px;
+      color: var(--primary);
+      display: inline-block;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before {
+      transform: rotate(90deg);
+    }
+    details p {
+      margin-top: 10px;
+      font-size: 13px;
+      color: var(--text-soft);
+      line-height: 1.6;
+    }
+    /* 评论区 */
+    .comment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .comment-item {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      font-size: 13px;
+    }
+    .comment-item .nick {
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 4px;
+      font-size: 13px;
+    }
+    .comment-item .text {
+      color: var(--text-soft);
+      line-height: 1.5;
+    }
+    /* 资讯 */
+    .news-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .news-item {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+    }
+    .news-item .news-title {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--text);
+    }
+    .news-item .news-date {
+      font-size: 12px;
+      color: var(--muted);
+      margin-left: 12px;
+    }
+    .news-item .news-summary {
+      font-size: 13px;
+      color: var(--text-soft);
+      margin-top: 4px;
+    }
+    /* 相关推荐标签索引 */
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .tag-cloud a {
+      font-size: 13px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 5px 14px;
+      color: var(--text-soft);
+    }
+    .tag-cloud a:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+    /* 时间线 */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      border-left: 2px solid var(--border);
+      padding-left: 18px;
+      margin-left: 6px;
+    }
+    .timeline-item {
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -24px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      background: var(--primary);
+      border-radius: 50%;
+      border: 2px solid var(--bg);
+    }
+    .timeline-item .time {
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .timeline-item .event {
+      font-size: 14px;
+      color: var(--text-soft);
+    }
+    /* 页尾 */
+    footer {
+      background: var(--panel);
+      border-top: 1px solid var(--border);
+      padding: 32px 0 20px;
+      margin-top: 20px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    .footer-brand .brand-text {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    .footer-brand p {
+      font-size: 13px;
+      color: var(--text-soft);
+      max-width: 240px;
+    }
+    .footer-col h4 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+    .footer-col a {
+      display: block;
+      font-size: 13px;
+      color: var(--text-soft);
+      margin-bottom: 6px;
+    }
+    .footer-col a:hover {
+      color: var(--primary);
+    }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+    }
+    /* 搜索无结果 */
+    .no-result {
+      padding: 12px;
+      color: var(--accent);
+      font-size: 14px;
+      display: none;
+    }
+    /* 响应式 */
+    @media (max-width: 1024px) {
+      .main-grid {
+        grid-template-columns: 1fr;
+      }
+      .left-sidebar, .right-sidebar {
+        position: static;
+      }
+      .left-sidebar {
+        display: none;
+      }
+      .right-sidebar {
+        margin-top: 24px;
+      }
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .channel-bar {
+        display: none;
+      }
+      .cat-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 640px) {
+      .hero h1 {
+        font-size: 24px;
+      }
+      .header-nav {
+        flex-wrap: wrap;
+        gap: 12px;
+        font-size: 13px;
+      }
+      .update-item {
+        flex-direction: column;
+        gap: 4px;
+      }
+      .comment-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      :root {
+        --header-h: 150px;
+      }
+    }
+    @media (max-width: 400px) {
+      .cat-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    /* 焦点 */
+    a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
+    }
+    /* 高亮搜索结果 */
+    .highlight {
+      background: rgba(240,179,75,0.25);
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 吸顶区域：公告条 + 页头 -->
+<div class="sticky-wrap">
+  <div class="announce-bar">
+    <span>⚡ 公告</span> 今日大乱斗新一轮爆料已更新 · 新赛季套路解析上线 · 每晚 8 点赛事追踪
+  </div>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="/#home" class="brand" aria-label="51爆料每日大赛大乱斗 首页">
+          <svg class="brand-mark" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="44" height="44" rx="10" fill="#1f2535"/>
+            <path d="M10 16h24v4H10z" fill="#f0b34b"/>
+            <path d="M10 24h14v4H10z" fill="#e05a4e"/>
+            <circle cx="32" cy="30" r="5" fill="#4f8cff"/>
+            <path d="M30 30l2 2 3-4" stroke="#fff" stroke-width="1.8" fill="none"/>
+          </svg>
+          <span class="brand-text">51爆料每日大赛大乱斗</span>
+        </a>
+        <nav class="header-nav" aria-label="主题导航">
+          <a href="/#hot">大乱斗每日爆料</a>
+          <a href="/#updates">赛事追踪</a>
+          <a href="/#categories">玩法对比</a>
+          <a href="/#deep">冷门套路</a>
+          <a href="/#faq">常见问题</a>
+        </nav>
+        <div class="header-actions">
+          <div class="search-box">
+            <input type="search" id="searchInput" placeholder="搜索内容…" aria-label="搜索页面内容">
+            <button id="searchBtn" aria-label="搜索">🔍</button>
+          </div>
+        </div>
+      </div>
+      <div class="channel-bar" aria-label="频道导航">
+        <a href="/#hot">每日爆料</a>
+        <a href="/#updates">最新动态</a>
+        <a href="/#categories">分类筛选</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#comments">玩家评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#recommend">延伸推荐</a>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- 首屏 -->
+<section class="hero" id="home">
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <h1>51爆料每日大赛大乱斗</h1>
+      <p class="hero-desc">聚合每日大乱斗爆料、赛事追踪与玩法对比。从选手动态到冷门套路，每期更新实战向内容，适合关注乱斗竞技的玩家与内容爱好者。</p>
+      <div class="hero-meta">
+        <span>每日更新 3—5 条爆料</span>
+        <span>赛事追踪 · 套路解析</span>
+        <span>已收录 200+ 条示例条目</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg width="200" height="160" viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="10" y="20" width="180" height="120" rx="12" fill="#1f2535" stroke="#2b3346"/>
+        <rect x="24" y="36" width="80" height="8" rx="4" fill="#f0b34b" opacity="0.8"/>
+        <rect x="24" y="52" width="120" height="6" rx="3" fill="#4f8cff" opacity="0.5"/>
+        <rect x="24" y="66" width="100" height="6" rx="3" fill="#a6adc4" opacity="0.4"/>
+        <rect x="24" y="80" width="140" height="6" rx="3" fill="#a6adc4" opacity="0.3"/>
+        <rect x="24" y="94" width="90" height="6" rx="3" fill="#e05a4e" opacity="0.6"/>
+        <circle cx="164" cy="44" r="12" fill="#e05a4e" opacity="0.9"/>
+        <text x="160" y="49" font-size="12" fill="#fff" text-anchor="middle">🔥</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 三栏主内容区 -->
+<div class="container main-grid" id="mainGrid">
+  <!-- 左栏：频道导航 + 标签索引 -->
+  <aside class="left-sidebar" aria-label="栏目索引">
+    <h3>栏目导航</h3>
+    <nav class="side-nav">
+      <a href="/#intro">内容简介</a>
+      <a href="/#hot">热门内容推荐</a>
+      <a href="/#updates">最新更新</a>
+      <a href="/#categories">分类入口</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comments">用户评论</a>
+      <a href="/#news">相关资讯</a>
+      <a href="/#recommend">相关推荐</a>
+      <a href="/#timeline">趋势观察</a>
+    </nav>
+    <h3 style="margin-top:18px;">热门标签</h3>
+    <div class="side-tags">
+      <span>大乱斗每日爆料</span>
+      <span>赛事追踪</span>
+      <span>玩法对比</span>
+      <span>冷门套路</span>
+      <span>乱斗竞技热点</span>
+      <span>选手动态</span>
+    </div>
+  </aside>
+
+  <!-- 中栏：主内容 -->
+  <main class="main-content">
+
+    <!-- 1. 内容简介 -->
+    <section id="intro">
+      <h2 class="section-title">内容简介</h2>
+      <div style="background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:20px 24px;">
+        <p style="font-size:14px;color:var(--text-soft);line-height:1.8;margin-bottom:12px;">
+          <strong>51爆料每日大赛大乱斗</strong> 是一个围绕大乱斗竞技的每日爆料与赛事追踪内容页。这里汇集选手动态、冷门套路、赛果快报与玩法对比，帮助关注乱斗竞技的玩家快速掌握当日热点。无论你是想找大乱斗每日爆料的更新节奏，还是想对比不同套路在实战中的表现，都能从下方板块中找到对应入口。
+        </p>
+        <p style="font-size:14px;color:var(--text-soft);line-height:1.8;margin-bottom:12px;">
+          内容按“爆料—追踪—对比—解析”四个层次组织。热门推荐展示当日讨论度较高的具体条目；最新更新以短讯形式记录赛事动态；分类入口按大乱斗常见玩法与选手类型划分，方便按兴趣筛选。深度解析部分每期选取一个套路或对局展开，说明适用场景与克制关系，适合想深入了解乱斗竞技的读者。
+        </p>
+        <p style="font-size:14px;color:var(--text-soft);line-height:1.8;">
+          如果你更关心“大乱斗一般多久更新一次”或“冷门套路和主流套路哪个更稳”，FAQ 与相关推荐中有对应问答与标签索引。全页内容以示例数据呈现，用于展示门户型页面的信息组织方式。
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. 热门内容推荐 -->
+    <section id="hot">
+      <h2 class="section-title">热门内容推荐 · 大乱斗每日爆料</h2>
+      <div class="card-grid">
+        <article class="content-card">
+          <h3 class="card-title">“双坦拉扯流”本周胜率抬头，大乱斗每日爆料实测记录</h3>
+          <div class="card-tags"><span>大乱斗每日爆料</span><span>冷门套路</span><span>实战记录</span></div>
+          <p class="card-desc">双前排互相掩护的拉扯打法在近期对局中出场率上升，适合喜欢慢节奏消耗的玩家。</p>
+          <div class="card-meta"><span>热度 9.2</span><span>更新于 06-12</span></div>
+        </article>
+        <article class="content-card">
+          <h3 class="card-title">大乱斗赛事追踪：周末八强对阵表与选手状态速览</h3>
+          <div class="card-tags"><span>赛事追踪</span><span>选手动态</span><span>对阵表</span></div>
+          <p class="card-desc">八强队伍近期训练赛数据与英雄池变化整理，附对阵时间线。</p>
+          <div class="card-meta"><span>热度 8.8</span><span>更新于 06-11</span></div>
+        </article>
+        <article class="content-card">
+          <h3 class="card-title">玩法对比：速攻流与控场流在大乱斗中的节奏差异</h3>
+          <div class="card-tags"><span>玩法对比</span><span>速攻流</span><span>控场流</span></div>
+          <p class="card-desc">从开局三分钟资源争夺到中期团战决策，对比两种思路的优缺点。</p>
+          <div class="card-meta"><span>热度 8.5</span><span>更新于 06-10</span></div>
+        </article>
+        <article class="content-card">
+          <h3 class="card-title">冷门套路“双辅保核”实战拆解，大乱斗每日爆料</h3>
+          <div class="card-tags"><span>冷门套路</span><span>双辅保核</span><span>实战拆解</span></div>
+          <p class="card-desc">双辅助保护核心输出的打法在特定阵容下表现稳定，但需要沟通配合。</p>
+          <div class="card-meta"><span>热度 8.1</span><span>更新于 06-09</span></div>
+        </article>
+        <article class="content-card">
+          <h3 class="card-title">大乱斗每日爆料：本周选手转会与阵容调整汇总</h3>
+          <div class="card-tags"><span>大乱斗每日爆料</span><span>转会动态</span><span>阵容调整</span></div>
+          <p class="card-desc">多位选手位置变动，部分队伍尝试新的大乱斗轮换体系。</p>
+          <div class="card-meta"><span>热度 7.9</span><span>更新于 06-08</span></div>
+        </article>
+        <article class="content-card">
+          <h3 class="card-title">赛事追踪：大乱斗地图池轮换后的热门选择变化</h3>
+          <div class="card-tags"><span>赛事追踪</span><span>地图池</span><span>热门选择</span></div>
+          <p class="card-desc">地图轮换后，控制型英雄与机动型英雄的选取率出现明显波动。</p>
+          <div class="card-meta"><span>热度 7.6</span><span>更新于 06-07</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. 最新更新 / 热门动态 -->
+    <section id="updates">
+      <h2 class="section-title">最新更新 · 大乱斗赛事追踪</h2>
+      <div class="update-list">
+        <div class="update-item"><span class="name">速攻流三排模板</span><span class="summary">新增开局 90 秒资源路线，适合双排与三排快速上手。</span></div>
+        <div class="update-item"><span class="name">控场流中期决策</span><span class="summary">补充“先手开团 vs 反打”判断条件，含 3 个实战片段摘要。</span></div>
+        <div class="update-item"><span class="name">八强对阵时间线</span><span class="summary">周末赛程更新，附选手近期状态与英雄池变化。</span></div>
+        <div class="update-item"><span class="name">冷门套路“双辅保核”</span><span class="summary">新增克制关系说明，以及对阵速攻流时的站位建议。</span></div>
+        <div class="update-item"><span class="name">大乱斗每日爆料精选</span><span class="summary">本周选手转会与轮换汇总，涉及 4 支队伍。</span></div>
+        <div class="update-item"><span class="name">地图池轮换观察</span><span class="summary">控制型英雄选取率上升，机动型英雄在特定地图仍有优势。</span></div>
+        <div class="update-item"><span class="name">新手向：大乱斗节奏认知</span><span class="summary">从开局资源到中期团战，梳理乱斗竞技的基本时间轴。</span></div>
+        <div class="update-item"><span class="name">玩法对比工具页</span><span class="summary">速攻流与控场流的适用阵容、上手难度与容错率对照。</span></div>
+      </div>
+    </section>
+
+    <!-- 4. 分类入口 -->
+    <section id="categories">
+      <h2 class="section-title">分类入口 · 按玩法与内容类型</h2>
+      <div class="cat-grid">
+        <a href="/#hot" class="cat-item">大乱斗每日爆料</a>
+        <a href="/#deep" class="cat-item">冷门套路解析</a>
+        <a href="/#updates" class="cat-item">赛事追踪快讯</a>
+        <a href="/#deep" class="cat-item">玩法对比</a>
+        <a href="/#hot" class="cat-item">选手动态</a>
+        <a href="/#guide" class="cat-item">新手指南</a>
+        <a href="/#news" class="cat-item">版本热点</a>
+        <a href="/#recommend" class="cat-item">套路索引</a>
+      </div>
+    </section>
+
+    <!-- 5. 深度解析正文 -->
+    <section id="deep">
+      <h2 class="section-title">深度解析 · 大乱斗玩法对比与套路拆解</h2>
+      <div class="deep-dive">
+        <h3>速攻流在大乱斗中的节奏特点</h3>
+        <p>速攻流的核心是压缩对手发育窗口，通过前期高频率碰撞建立装备与等级优势。在大乱斗每日爆料的实战记录中，速攻流在开局三分钟内的资源争夺成功率较高，但容错率偏低。一旦第一波进攻被化解，中期容易陷入被动。</p>
+        <p>选择速攻流时，阵容需要至少两名具备先手能力的角色，并保证控制链衔接。地图池中狭窄地形较多的地图对速攻流更友好，因为可以缩短接近距离，减少被风筝的风险。</p>
+        <h3>控场流的资源交换逻辑</h3>
+        <p>控场流不追求前期击杀，而是通过视野与站位控制关键区域，用资源交换拖入中后期。在大乱斗赛事追踪的样本中，控场流在均势局的表现更稳定，但对团队沟通要求更高。</p>
+        <p>控场流的关键决策点在于“何时接团”。如果对方速攻流已经拿到第一条关键资源，控场流应优先交换另一侧地图资源，而不是强行争夺。这种取舍在玩法对比中往往被低估。</p>
+        <h3>冷门套路“双辅保核”的适用场景</h3>
+        <p>“双辅保核”在大乱斗每日爆料中讨论度不高，但在特定阵容下表现稳定。该套路需要两名辅助型角色保护一名核心输出，牺牲部分前期节奏换取后期容错。适合对方缺少强开团手段、且己方核心输出有自保能力的对局。</p>
+        <ul>
+          <li>适合：对方速攻流依赖第一波控制链，双辅可以打断连招。</li>
+          <li>不适合：对方控场流拥有多段位移与远程消耗，双辅容易被拉扯。</li>
+          <li>注意：双辅保核需要提前沟通资源分配，避免核心输出发育受阻。</li>
+        </ul>
+        <h3>如何选择适合你的大乱斗套路</h3>
+        <p>如果你偏好快节奏、喜欢主动碰撞，速攻流更匹配；如果你更看重稳定与后期决策，控场流的上手曲线更平缓。冷门套路可以作为备选，在对方阵容偏科时使用。51爆料每日大赛大乱斗的推荐标签中按套路类型做了索引，方便按偏好筛选。</p>
+        <p>无论选择哪种思路，建议先在小规模对局中熟悉节奏，再逐步过渡到完整赛事环境。玩法对比的意义在于理解差异，而不是寻找绝对最优解。</p>
+      </div>
+    </section>
+
+    <!-- 6. 体验指南 -->
+    <section id="guide">
+      <h2 class="section-title">体验指南 · 快速找到你关心的内容</h2>
+      <div class="guide-steps">
+        <div class="step">
+          <div class="num">1</div>
+          <h4>按频道浏览</h4>
+          <p>页头频道与左栏导航覆盖爆料、追踪、对比、解析四类入口，点击跳转到对应板块。</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h4>卡片筛选</h4>
+          <p>热门推荐与分类入口按玩法与内容类型区分，标签可辅助识别套路方向。</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h4>搜索查找</h4>
+          <p>顶部搜索框支持本地内容查找，输入“速攻流”“赛事追踪”等关键词即可定位。</p>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <h4>移动端适配</h4>
+          <p>手机端自动合并侧栏，频道转为可滚动导航，正文按顺序阅读，无横向溢出。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FAQ -->
+    <section id="faq">
+      <h2 class="section-title">常见问题 · 大乱斗每日爆料与玩法选择</h2>
+      <div class="faq-list">
+        <details>
+          <summary>大乱斗每日爆料一般多久更新一次？</summary>
+          <p>本页示例内容按日更节奏组织，通常每天更新 3—5 条爆料摘要，赛事追踪在比赛日会额外增加条目。实际更新频率视内容量而定。</p>
+        </details>
+        <details>
+          <summary>速攻流和控场流哪个更适合新手？</summary>
+          <p>控场流的上手曲线相对平缓，对前期碰撞的容错要求较低；速攻流需要更明确的先手时机判断。新手可以先从控场流的基础节奏练起，再尝试速攻流。</p>
+        </details>
+        <details>
+          <summary>冷门套路“双辅保核”在排位中好用吗？</summary>
+          <p>该套路依赖队友配合与阵容搭配，单排环境沟通成本较高，更适合双排或三排使用。在对方缺少强开团时效果更明显。</p>
+        </details>
+        <details>
+          <summary>大乱斗赛事追踪包含哪些信息？</summary>
+          <p>示例赛事追踪包括对阵时间线、选手近期状态、英雄池变化与地图池轮换影响，帮助读者快速了解赛事动态。</p>
+        </details>
+        <details>
+          <summary>在哪里可以找到更多冷门套路？</summary>
+          <p>热门推荐与相关推荐标签中按“冷门套路”“实战记录”等方向做了索引，深度解析板块也会定期拆解一个冷门思路。</p>
+        </details>
+        <details>
+          <summary>大乱斗地图池变化对玩法选择影响大吗？</summary>
+          <p>地图池变化会直接影响速攻流与控场流的强弱关系。狭窄地形多时速攻流更容易发挥，开阔地形则给控场流更多拉扯空间。</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- 8. 用户评论 -->
+    <section id="comments">
+      <h2 class="section-title">用户评论 · 玩家怎么看</h2>
+      <div class="comment-grid">
+        <div class="comment-item"><div class="nick">乱斗小探</div><div class="text">双坦拉扯流那篇很实用，昨晚试了两把确实能拖后期。</div></div>
+        <div class="comment-item"><div class="nick">速攻爱好者</div><div class="text">速攻流还是吃配合，单排容易翻车，但节奏是真的快。</div></div>
+        <div class="comment-item"><div class="nick">控场老猫</div><div class="text">玩法对比写得很清楚，控场流确实更看沟通。</div></div>
+        <div class="comment-item"><div class="nick">冷门挖掘机</div><div class="text">双辅保核终于有人写了，之前一直觉得这思路被低估。</div></div>
+        <div class="comment-item"><div class="nick">赛事围观者</div><div class="text">对阵时间线整理得挺细，追比赛方便不少。</div></div>
+        <div class="comment-item"><div class="nick">地图控</div><div class="text">地图池轮换那段分析到位，机动英雄确实看地形。</div></div>
+        <div class="comment-item"><div class="nick">新手阿凉</div><div class="text">刚接触大乱斗，指南里的节奏认知帮到我了。</div></div>
+        <div class="comment-item"><div class="nick">夜猫子玩家</div><div class="text">每日爆料更新挺勤，睡前刷一眼刚好。</div></div>
+        <div class="comment-item"><div class="nick">套路收集癖</div><div class="text">希望多来点冷门套路拆解，主流玩法看腻了。</div></div>
+        <div class="comment-item"><div class="nick">理性讨论</div><div class="text">文章没有硬吹某个套路，优缺点都说了，比较客观。</div></div>
+        <div class="comment-item"><div class="nick">三排选手</div><div class="text">速攻流三排模板很实用，开局路线直接能抄。</div></div>
+        <div class="comment-item"><div class="nick">观望中</div><div class="text">还在犹豫玩速攻还是控场，看完对比决定先练控场。</div></div>
+      </div>
+    </section>
+
+    <!-- 9. 相关资讯 -->
+    <section id="news">
+      <h2 class="section-title">相关资讯 · 大乱斗热点速递</h2>
+      <div class="news-list">
+        <div class="news-item">
+          <div><span class="news-title">大乱斗地图池轮换后，控场型英雄选取率上升</span><span class="news-date">2026-06-12</span></div>
+          <div class="news-summary">新地图池更开阔，控场流在中期拉扯中受益，速攻流则更依赖狭窄地形。</div>
+        </div>
+        <div class="news-item">
+          <div><span class="news-title">多位选手尝试双辅保核体系，训练赛数据曝光</span><span class="news-date">2026-06-11</span></div>
+          <div class="news-summary">双辅保核在特定对局中表现稳定，但需要较高的沟通成本。</div>
+        </div>
+        <div class="news-item">
+          <div><span class="news-title">周末八强对阵出炉，速攻流与控场流将正面碰撞</span><span class="news-date">2026-06-10</span></div>
+          <div class="news-summary">八强队伍风格差异明显，速攻与控场的对决成为看点。</div>
+        </div>
+        <div class="news-item">
+          <div><span class="news-title">大乱斗每日爆料：本周选手转会与轮换汇总</span><span class="news-date">2026-06-09</span></div>
+          <div class="news-summary">涉及四支队伍的位置调整，部分选手尝试新的大乱斗分工。</div>
+        </div>
+        <div class="news-item">
+          <div><span class="news-title">冷门套路“双坦拉扯”在排位中出场率回升</span><span class="news-date">2026-06-08</span></div>
+          <div class="news-summary">双前排互相掩护的打法在特定阵容下表现稳定，适合慢节奏消耗。</div>
+        </div>
+        <div class="news-item">
+          <div><span class="news-title">大乱斗赛事追踪：地图轮换后的资源争夺变化</span><span class="news-date">2026-06-07</span></div>
+          <div class="news-summary">开局资源争夺时间点出现微调，速攻流需要重新适应节奏。</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. 相关推荐 -->
+    <section id="recommend">
+      <h2 class="section-title">相关推荐 · 按套路与场景索引</h2>
+      <div class="tag-cloud">
+        <a href="/#deep">速攻流开局路线</a>
+        <a href="/#deep">控场流中期决策</a>
+        <a href="/#deep">双辅保核克制关系</a>
+        <a href="/#deep">双坦拉扯实战记录</a>
+        <a href="/#updates">大乱斗赛事追踪</a>
+        <a href="/#hot">选手英雄池变化</a>
+        <a href="/#categories">地图池轮换观察</a>
+        <a href="/#guide">新手节奏认知</a>
+      </div>
+    </section>
+
+    <!-- 11. 趋势观察 / 时间线 -->
+    <section id="timeline">
+      <h2 class="section-title">趋势观察 · 大乱斗近期节奏变化</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="time">2026-06-12</div>
+          <div class="event">地图池轮换后，控场流选取率上升，速攻流在狭窄地图仍有优势。</div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">2026-06-10</div>
+          <div class="event">双辅保核体系在训练赛中尝试增多，但排位出场率仍低。</div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">2026-06-08</div>
+          <div class="event">双坦拉扯流在排位中出场率回升，慢节奏消耗打法受关注。</div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">2026-06-05</div>
+          <div class="event">大乱斗每日爆料连续更新选手动态，转会窗口活跃。</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右栏：辅助阅读 -->
+  <aside class="right-sidebar" aria-label="辅助阅读">
+    <h3>页内目录</h3>
+    <nav class="toc">
+      <a href="/#intro">内容简介</a>
+      <a href="/#hot">热门内容推荐</a>
+      <a href="/#updates">最新更新</a>
+      <a href="/#categories">分类入口</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comments">用户评论</a>
+      <a href="/#news">相关资讯</a>
+      <a href="/#recommend">相关推荐</a>
+      <a href="/#timeline">趋势观察</a>
+    </nav>
+    <h3>热门条目</h3>
+    <div class="hot-list">
+      <a href="/#deep"><span class="num">1</span>速攻流与控场流节奏对比</a>
+      <a href="/#deep"><span class="num">2</span>双辅保核适用场景</a>
+      <a href="/#hot"><span class="num">3</span>双坦拉扯流实测</a>
+      <a href="/#updates"><span class="num">4</span>八强对阵时间线</a>
+      <a href="/#news"><span class="num">5</span>地图池轮换观察</a>
+    </div>
+    <h3>延伸阅读</h3>
+    <div class="extend-tags">
+      <a href="/#deep">冷门套路拆解</a>
+      <a href="/#guide">新手节奏认知</a>
+      <a href="/#categories">玩法对比索引</a>
+      <a href="/#faq">大乱斗常见问题</a>
+    </div>
+  </aside>
+</div>
+
+<!-- 页尾 -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-text">51爆料每日大赛大乱斗</div>
+        <p>聚合每日大乱斗爆料、赛事追踪与玩法对比，为乱斗竞技爱好者提供结构化的内容入口。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容频道</h4>
+        <a href="/#hot">大乱斗每日爆料</a>
+        <a href="/#updates">赛事追踪</a>
+        <a href="/#deep">冷门套路</a>
+        <a href="/#categories">玩法对比</a>
+      </div>
+      <div class="footer-col">
+        <h4>辅助阅读</h4>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">用户评论</a>
+        <a href="/#recommend">相关推荐</a>
+      </div>
+      <div class="footer-col">
+        <h4>更多入口</h4>
+        <a href="/#intro">内容简介</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#timeline">趋势观察</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      部分内容为示例数据，仅用于展示页面结构。 © 2026 51爆料每日大赛大乱斗
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    // 搜索功能：高亮匹配内容并展示无结果反馈
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    const mainContent = document.querySelector('.main-content');
+
+    function removeHighlights() {
+      document.querySelectorAll('.highlight').forEach(el => {
+        const parent = el.parentNode;
+        parent.replaceChild(document.createTextNode(el.textContent), el);
+        parent.normalize();
+      });
+    }
+
+    function highlightText(node, term) {
+      if (node.nodeType === 3) {
+        const text = node.nodeValue;
+        const lowerText = text.toLowerCase();
+        const lowerTerm = term.toLowerCase();
+        const idx = lowerText.indexOf(lowerTerm);
+        if (idx !== -1) {
+          const before = text.slice(0, idx);
+          const match = text.slice(idx, idx + term.length);
+          const after = text.slice(idx + term.length);
+          const span = document.createElement('span');
+          span.className = 'highlight';
+          span.textContent = match;
+          const frag = document.createDocumentFragment();
+          if (before) frag.appendChild(document.createTextNode(before));
+          frag.appendChild(span);
+          if (after) frag.appendChild(document.createTextNode(after));
+          node.parentNode.replaceChild(frag, node);
+          return true;
+        }
+      } else if (node.nodeType === 1 && node.childNodes && !['SCRIPT', 'STYLE', 'INPUT', 'TEXTAREA'].includes(node.tagName)) {
+        let found = false;
+        for (let i = 0; i < node.childNodes.length; i++) {
+          if (highlightText(node.childNodes[i], term)) {
+            found = true;
+          }
+        }
+        return found;
+      }
+      return false;
+    }
+
+    function performSearch() {
+      const term = searchInput.value.trim();
+      removeHighlights();
+      let noResultEl = document.getElementById('noResultMsg');
+      if (!term) {
+        if (noResultEl) noResultEl.style.display = 'none';
+        return;
+      }
+      const found = highlightText(mainContent, term);
+      if (!found) {
+        if (!noResultEl) {
+          noResultEl = document.createElement('div');
+          noResultEl.id = 'noResultMsg';
+          noResultEl.className = 'no-result';
+          noResultEl.textContent = '未找到与“' + term + '”相关的内容，请尝试其他关键词。';
+          mainContent.prepend(noResultEl);
+        } else {
+          noResultEl.textContent = '未找到与“' + term + '”相关的内容，请尝试其他关键词。';
+          noResultEl.style.display = 'block';
+        }
+      } else if (noResultEl) {
+        noResultEl.style.display = 'none';
+      }
+    }
+
+    searchBtn.addEventListener('click', performSearch);
+    searchInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        performSearch();
+      }
+    });
+  })();
+</script>
+</body>
+            </html>
